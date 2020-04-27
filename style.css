@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500,500italic,400italic,300italic,100italic,700italic);
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
+@import url(fonts/OperatorMono/OperatorMono.css);
+@import url(fonts/DankMono/DankMono.css);
 html {
     box-sizing: border-box
 }
@@ -8,78 +10,18 @@ html {
 body {
     background: #ffffff;
     font-family: Roboto, sans-serif;
-    -webkit-font-smoothing: antialiased
-}
-
-.button {
-    min-width: 150px;
-    max-width: 250px;
-    display: block;
-    margin: 1em;
-    padding: 1em 2em;
-    border: none;
-    background: none;
-    color: inherit;
-    position: relative;
-    z-index: 1;
-    -moz-osx-font-smoothing: grayscale;
-    border-radius: 0;
-    margin: 0 auto;
-    margin-top: 0px;
-    padding: 5px 20px;
-    display: inline-block;
-    font-weight: 400;
-}
-
-.button.button--sacnite {
-    width: 60px;
-    height: 60px;
-    min-width: 0;
-    padding: 0;
-    color: #fff;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s
-}
-
-.button--sacnite::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    z-index: -1;
-    box-shadow: inset 0 0 0 35px #333;
-    -webkit-transform: scale3d(0.9, 0.9, 1);
-    transform: scale3d(0.9, 0.9, 1);
-    -webkit-transition: box-shadow 0.3s, -webkit-transform 0.3;
-    transition: box-shadow 0.3s, transform 0.3s
-}
-
-.button.button--sacnite:hover {
-    color: #333
-}
-
-.button.button--sacnite:hover::before {
-    box-shadow: inset 0 0 0 2px #333;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1)
-}
-
-body {
+    -webkit-font-smoothing: antialiased;
     color: #333;
-    font-family: Roboto, sans-serif;
     font-feature-settings: "kern", "liga", "pnum";
     font-size: 1em;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Roboto, sans-serif;
     font-size: 1em;
     line-height: 1.2;
-    margin: 0 0 0.75em
+    margin: 0 0 0.75em;
 }
 
 p {
@@ -89,10 +31,6 @@ p {
 a {
     color: #477dca;
     transition: color 150ms ease
-}
-
-a:active, a:focus, a:hover {
-    color: #355e98
 }
 
 h1 {
@@ -109,16 +47,13 @@ h2 {
 h3 {
     font-weight: 300;
     font-size: 3em;
-    text-align: center;
-    border-bottom: dashed 2px #CCCCCC;
-    padding-bottom: 10px;
-    margin-bottom: 40px
+    font-family: "DankMono";
+    font-style: italic;
 }
 
 h4 {
-    font-weight: 300;
     font-size: 2.5em;
-    margin-bottom: 3px
+    margin-bottom: 3px;
 }
 
 p, ul {
@@ -140,39 +75,31 @@ mark {
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25)
 }
 
-ul.icons a:hover {
-    background: rgba(0, 0, 0, 0.025)
-}
-
-ul.icons li {
-    display: inline-block;
-    padding-left: 0.75em
-}
-
-ul.icons a {
-    -moz-transition: background-color 0.25s ease-in-out;
-    -webkit-transition: background-color 0.25s ease-in-out;
-    -ms-transition: background-color 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out;
-    display: inline-block;
-    width: 2.75em;
-    height: 2.75em;
-    line-height: 2.8em;
+/* h1 {
+    overflow: hidden;
     text-align: center;
-    border: 0;
-    box-shadow: none;
-    padding: 0;
-    border-radius: 100%;
-    color: #aaa
+} */
+
+.lined:before, .lined:after {
+    background-color: #F0FFFF;
+    content: "";
+    display: inline-block;
+    height: 2.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 12.5%;
+    /* margin: 5px, 5px, 5px, 5px; */
 }
 
-.icons i {
-    font-size: 30px;
-    line-height: 60px
+.title {
+    font-size: 700%;
+    font-weight: 900;
+    font-family: OperatorMono;
 }
 
-.icons {
-    padding: 0;
-    font-size: 1em;
-    margin-bottom: 20px;
+.dual-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
