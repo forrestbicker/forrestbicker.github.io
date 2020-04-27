@@ -104,6 +104,6 @@ mark {
 }
 
 .column {
-    flex: 158px;
+    flex: auto;
     display: inline-block;
 }
