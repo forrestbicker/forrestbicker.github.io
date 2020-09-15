@@ -81,7 +81,7 @@ mark {
 } */
 
 .lined:before, .lined:after {
-    background-color: #F0FFFF;
+    background-color: #283258;
     content: "";
     display: inline-block;
     height: 2.5px;
