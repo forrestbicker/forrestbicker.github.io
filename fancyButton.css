@@ -51,6 +51,7 @@
 
 a:active, a:focus, a:hover {
     color: #355e98
+    text-decoration: none;
 }
 
 ul.icons a:hover {
