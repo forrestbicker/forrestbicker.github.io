@@ -106,4 +106,7 @@ mark {
 .column {
     flex: auto;
     display: inline-block;
+.parallax::after {
+    background-image: url('assets/valley.jpeg');
+}
 }
