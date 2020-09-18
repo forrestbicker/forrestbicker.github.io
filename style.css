@@ -108,5 +108,9 @@ mark {
     display: inline-block;
 .parallax::after {
     background-image: url('assets/valley.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
 }
