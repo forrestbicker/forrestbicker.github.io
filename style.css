@@ -113,4 +113,12 @@ mark {
     background-position: center;
     height: 100vh;
 }
+.project {
+    background: #16184A;
+    height: 450px;
+    color: #E4DDBE;
+    font-family: OperatorMono;
+    font-size: 25px;
+    border-bottom: 1px dashed;
+}
 }
