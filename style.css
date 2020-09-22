@@ -106,6 +106,15 @@ mark {
 .column {
     flex: auto;
     display: inline-block;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+}
+
 .parallax::after {
     content: " ";
     position: absolute;
