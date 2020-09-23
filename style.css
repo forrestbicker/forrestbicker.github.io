@@ -115,6 +115,14 @@ mark {
     perspective: 1px;
 }
 
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
 .parallax::after {
     content: " ";
     position: absolute;
