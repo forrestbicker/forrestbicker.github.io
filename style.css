@@ -133,11 +133,23 @@ mark {
     transform: translateZ(-1px) scale(2);
     background-size: 100%;
     z-index: -1;
-    background-image: url('assets/valley.jpeg');
+    background-image: url(assets/valley.jpeg);
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+}
+
+.grass {
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    background-image: url(assets/grass.png);
+    height: 275px;
+    width: 100vw;
+    background-size: cover;
 }
 
 .content {
