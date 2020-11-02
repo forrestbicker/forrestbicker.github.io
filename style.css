@@ -135,6 +135,7 @@ mark {
     z-index: -1;
     background-image: url(assets/valley.jpeg);
     height: 100vh;
+    background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -160,6 +161,7 @@ mark {
     background: #16184A;
     height: 45vh;
     border-bottom: 1px dashed;
+    vertical-align: middle;
 }
 
 a {
