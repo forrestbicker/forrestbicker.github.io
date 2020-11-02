@@ -158,12 +158,12 @@ mark {
 
 .project {
     background: #16184A;
+    height: 45vh;
     border-bottom: 1px dashed;
 }
 
 a {
     text-decoration: none;
-    color: #E4DDBE;
     color: #16184A;
 }
 
