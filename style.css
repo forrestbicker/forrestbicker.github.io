@@ -34,9 +34,9 @@ a {
 }
 
 h1 {
-    font-size: 4em;
-    margin-bottom: 0.1em;
-    font-weight: 500
+    color: #16184A;
+    font-family: OperatorMono;
+    font-size: 25px;
 }
 
 h2 {
@@ -158,10 +158,6 @@ mark {
 
 .project {
     background: #16184A;
-    height: 450px;
-    color: #E4DDBE;
-    font-family: OperatorMono;
-    font-size: 25px;
     border-bottom: 1px dashed;
 }
 
