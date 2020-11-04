@@ -29,8 +29,9 @@ p {
 }
 
 a {
-    color: #477dca;
-    transition: color 150ms ease
+    color: #ffffff;
+    transition: color 150ms ease;
+    text-decoration: none;
 }
 
 h1 {
@@ -165,11 +166,9 @@ mark {
     height: 45vh;
     border-bottom: 1px dashed;
     vertical-align: middle;
-}
-
-a {
-    text-decoration: none;
-    color: #16184A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     float: none;
