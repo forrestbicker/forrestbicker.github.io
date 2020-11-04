@@ -34,9 +34,10 @@ a {
 }
 
 h1 {
-    color: #16184A;
+    color: #ffffff;
     font-family: OperatorMono;
-    font-size: 25px;
+    font-size: 50px;
+    text-shadow: 3px 3px 0px #017e7f, 6px 6px 0px #16184A;
 }
 
 h2 {
