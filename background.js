@@ -12,3 +12,12 @@ function buildButton(url, icon, section) {
 }
 
 buildButton("https://github.com/forrestbicker", "fa fa-github", "github-button");buildButton("https://www.linkedin.com/in/forrestbicker/", "fa fa-linkedin-square", "linkedin-button")
+
+// buildRandom
+
+function buildRandom(width, height, n) {
+    let values = []
+    for (var i = 0; i < n; i++) {
+        values.push(i);
+    }
+}
