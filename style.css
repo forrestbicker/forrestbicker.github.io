@@ -172,6 +172,7 @@ mark {
     height: 275px;
     width: 100vw;
     background-size: cover;
+    position: relative;
 }
 
 .content {
