@@ -236,6 +236,13 @@ mark {
     background: linear-gradient(0deg, #16184A, rgba(255, 255, 255, 0));
 }
 
+.backblur {
+    backdrop-filter: blur(1px);
+    border: 0px solid #000;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+}
+
 .gradient-button {
     width: 100px;
     height: 50px;
