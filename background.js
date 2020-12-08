@@ -12,12 +12,13 @@ function buildButton(url, icon, section) {
 }
 
 buildButton("https://github.com/forrestbicker", "fa fa-github", "github-button");buildButton("https://www.linkedin.com/in/forrestbicker/", "fa fa-linkedin-square", "linkedin-button")
-
-// buildRandom
+function buildRandom(n) {
+    canvas = document.getElementById("sort");
 
 function buildRandom(width, height, n) {
     let values = []
     for (var i = 0; i < n; i++) {
         values.push(i);
     }
-}
+}    maxHeight = canvas.clientHeight / 3 // only display on botom 1/3 of pannel
+    maxWidth = Math.trunc(canvas.clientWidth * 1.1) // make sure extends off of screen
