@@ -32,6 +32,9 @@ function buildRandom(n) {
     maxHeight = canvas.clientHeight / 3 // only display on botom 1/3 of pannel
     maxWidth = Math.trunc(canvas.clientWidth * 1.1) // make sure extends off of screen
 
+    widthUnit = Math.floor(1.0 * maxWidth / n); // here n = number of values
+    heightUnit = Math.floor(1.0 * maxHeight / (min + (n - 1))); // here n = max value
+
 buildButton("https://github.com/forrestbicker", "fa fa-github", "github-button"); buildButton("https://www.linkedin.com/in/forrestbicker/", "fa fa-linkedin-square", "linkedin-button")
 
 buildRandom(80)
