@@ -17,8 +17,9 @@ function buildRandom(n) {
 
 function buildRandom(width, height, n) {
     let values = []
+    min = Math.trunc(0.1 * n)
     for (var i = 0; i < n; i++) {
-        values.push(i);
+        values.push(min + i);
     }
 }    maxHeight = canvas.clientHeight / 3 // only display on botom 1/3 of pannel
     maxWidth = Math.trunc(canvas.clientWidth * 1.1) // make sure extends off of screen
