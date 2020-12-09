@@ -47,7 +47,10 @@ function buildRandom(n) {
                 style="fill: #E2E8F0">
                 </rect>`;
     }
+
+    canvas.innerHTML = newInnerHTML;
 }
+
 buildButton("https://github.com/forrestbicker", "fa fa-github", "github-button"); buildButton("https://www.linkedin.com/in/forrestbicker/", "fa fa-linkedin-square", "linkedin-button")
 
 buildRandom(80)
