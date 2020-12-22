@@ -11,7 +11,7 @@ function buildButton(url, icon, section) {
         </div>`
 }
 
-function buildRandom(n) {
+function buildSorter(n) {
     canvas = document.getElementById("sort");
 
     let values = []
@@ -51,6 +51,10 @@ function buildRandom(n) {
     canvas.innerHTML = newInnerHTML;
 }
 
+function buildEpidemic(n) {
+}
+
 buildButton("https://github.com/forrestbicker", "fa fa-github", "github-button"); buildButton("https://www.linkedin.com/in/forrestbicker/", "fa fa-linkedin-square", "linkedin-button")
 
-buildRandom(80)
+buildSorter(80)
+buildEpidemic(20)
