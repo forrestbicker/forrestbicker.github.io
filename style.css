@@ -34,24 +34,25 @@ a {
     text-decoration: none;
 }
 
-h1 {
+h2 {
     color: #ffffff;
     font-family: OperatorMono;
     font-size: 50px;
     text-shadow: 3px 3px 0px #017e7f, 6px 6px 0px #16184A;
 }
 
-h2.dark {
-    color: #16184A;
+h1 {
     font-family: OperatorMono;
     font-size: 50px;
+}
+
+h1.dark {
+    color: #16184A;
     text-shadow: 3px 3px 0px #c5cae9;
 }
 
-h2.light {
+h1.light {
     color: #eeffff;
-    font-family: OperatorMono;
-    font-size: 50px;
     text-shadow: 3px 3px 0px #2a3990;
 }
 
