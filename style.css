@@ -103,9 +103,13 @@ mark {
 }
 
 .title {
+    background-clip: content-box;
+    font-family: OperatorMono;
+    font-size: 100px;
     font-size: 700%;
     font-weight: 900;
-    font-family: OperatorMono;
+    color: #ffffff;
+    text-shadow: 3px 3px 0px #017e7f, 6px 6px 0px #16184A;
 }
 
 .dual-center {
