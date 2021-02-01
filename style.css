@@ -92,6 +92,8 @@ mark {
     text-align: center;
 } */
 
+/* Text with a line thru it: --hello-- */
+
 .lined:before, .lined:after {
     background-color: #283258;
     content: "";
@@ -101,6 +103,14 @@ mark {
     vertical-align: middle;
     width: 12.5%;
 }
+
+.gradient-text {
+    color: white;
+    background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Recoleta, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
 
 .title {
     background-clip: content-box;
