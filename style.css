@@ -111,7 +111,11 @@ mark {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-family: Recoleta, Helvetica Neue, Helvetica, Arial, sans-serif;
-    }
+    font-size: 3.5em;
+    letter-spacing: -1px;
+    line-height: 110%;
+    position: relative;
+}
 
 .title {
     background-clip: content-box;
@@ -260,7 +264,10 @@ mark {
 }
 
 .gradient-button {
-    width: 100px;
+    width: auto;
+    min-width: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 50px;
     border-radius: 20px;
     color: #fff;
