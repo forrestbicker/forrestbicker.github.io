@@ -170,11 +170,7 @@ mark {
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translateZ(-1px) scale(2);
-    -ms-transform: translateZ(-1px) scale(2);
     background-size: 100%;
-    z-index: -1;
-    background-image: url(assets/valley.jpeg);
     height: 100vh;
     background-size: 100%;
     background-size: cover;
