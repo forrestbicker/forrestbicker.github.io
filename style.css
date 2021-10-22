@@ -120,7 +120,7 @@ mark {
 .title {
     background-clip: content-box;
     font-family: OperatorMono;
-    font-size: 100px;
+    font-size: 200px;
     font-size: 700%;
     font-weight: 900;
     color: #ffffff;
@@ -149,14 +149,14 @@ mark {
 }
 
 .wrapper {
-    height: 100vh;
+    /* height: 100vh; */
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 1px;
 }
 
 .section {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,8 +187,10 @@ mark {
     background-image: url(assets/grass.png);
     height: 275px;
     width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     background-size: cover;
-    position: relative;
 }
 
 .content {
@@ -198,7 +200,7 @@ mark {
 
 .project {
     background: #16184A;
-    height: 100vh;
+    height: 80vh;
     border-bottom: 1px dashed;
     /* vertical-align: middle;
     align-items: center; */
@@ -253,7 +255,7 @@ mark {
     z-index: 1;
     position: relative;
     box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.5);
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
 }
 
