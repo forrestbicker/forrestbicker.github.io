@@ -1,3 +1,90 @@
+let RESOLUTION = 17000;
+function f(theta, n) {
+    return Math.cos(Math.asin(1) * 3 / n) / Math.cos(Math.asin(Math.sin(n * theta / 4)) * 3 / n)
+}
+
+function buildLogo(n, ctx) {
+
+    let data = [];
+    var gradient = ctx.createRadialGradient(WIDTH / 2, WIDTH / 2, 10, WIDTH / 2, WIDTH / 2, WIDTH / 2);
+    gradient.addColorStop(0.5, '#4C4799');
+    gradient.addColorStop(1, '#DD7BA2');
+    // gradient.addColorStop(1, 'white');
+    // Fill with gradient
+    ctx.fillStyle = gradient;
+    ctx.strokeStyle =
+        ctx.beginPath()
+    ctx.arc(WIDTH / 2, WIDTH / 2, WIDTH / 2, 0, 2 * Math.PI);
+    ctx.fill();
+    // ctx.stroke();
+    // 
+    // ctx.fillRect(0, 0, WIDTH * 1.3, WIDTH * 1.3);
+
+
+    // create RESOLUTIONxRESOLUTION grid
+    for (var i = 0; i < WIDTH; i++) {
+        let row = [];
+        for (var j = 0; j < WIDTH; j++) {
+            row.push(0);
+        }
+        data.push(row);
+    }
+
+    ctx.strokeStyle = `rgba(0, 0, 0, 1)`;
+    ctx.fillStyle = `rgba(0, 0, 0, 0.2)`;
+
+    ctx.beginPath();
+    ctx.moveTo(WIDTH / 2, WIDTH / 2);
+
+    for (let i = 0; i <= RESOLUTION; i++) {
+        let theta = (i / RESOLUTION) * 16 * Math.PI - 8 * Math.PI;
+
+        let r = f(theta, n);
+
+        let [x, y] = polarToPara(r, theta);
+
+        ctx.lineTo(x, y);
+        if (i % 1700 == 0) {
+            ctx.closePath()
+            ctx.fill()
+            ctx.beginPath();
+            ctx.moveTo(WIDTH / 2, WIDTH / 2);
+            ctx.lineTo(x, y);
+        }
+
+        // data[y][x] += 1;
+        // if (data[y][x] > max) {
+        //     max = data[y][x];
+        // }
+    }
+
+
+    // ctx.beginPath()
+    // let a = Math.trunc(255 * (1 - data[0][0] / max));
+    // ctx.fillStyle = `rgba(${a}, ${a}, ${a})`;
+    // ctx.moveTo(0, 0);
+
+    // for (var i = 0; i < WIDTH; i++) {
+    //     for (var j = 0; j < WIDTH; j++) {
+    //         let a = Math.trunc(255 * (1 - data[i][j] / max));
+    //         ctx.fillStyle = `rgba(${a}, ${a}, ${a})`;
+    //         ctx.lineTo(j, i);
+    //     }
+    // }
+    // ctx.closePath()
+    // ctx.stroke();
+
+}
+
+function polarToPara(r, theta) {
+    let x = (r * Math.cos(theta) * RESOLUTION / 2 + RESOLUTION / 2);
+    x = (x / (RESOLUTION / WIDTH));
+    let y = (r * Math.sin(theta) * RESOLUTION / 2 + RESOLUTION / 2);
+    y = (y / (RESOLUTION / WIDTH));
+
+    return [x, y];
+}
+
 function buildButton(url, icon, section) {
     document.getElementById(section).innerHTML =
         `<div class="column" style="background-color: #FFF; height: 60px; width: 60px; border-radius: 50px">
