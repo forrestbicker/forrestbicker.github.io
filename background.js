@@ -85,6 +85,37 @@ function polarToPara(r, theta) {
     return [x, y];
 }
 
+staticCanvas = document.getElementById('static-logo');
+if (staticCanvas.getContext) {
+    var staticCtx = staticCanvas.getContext('2d');
+}
+dynamicCanvas = document.getElementById('dynamic-logo');
+if (dynamicCanvas.getContext) {
+    var dynamicCtx = dynamicCanvas.getContext('2d');
+}
+i = 0
+nMax = 6;
+nMin = 4.25;
+let WIDTH = 64;
+buildLogo(nMin, staticCtx);
+WIDTH = 128;
+
+setInterval(function () {
+    dynamicCtx.clearRect(0, 0, WIDTH, WIDTH);
+    if (nMin + i <= nMax) {
+        buildLogo(nMin + i, dynamicCtx);
+    } else {
+        buildLogo(2 * nMax - nMin - i, dynamicCtx);
+    }
+    i += 0.125 / 32;
+    if (2 * nMax - nMin - i <= nMin) {
+        i = 0;
+    }
+}, 60);
+// buildLogo();
+
+
+
 function buildButton(url, icon, section) {
     document.getElementById(section).innerHTML =
         `<div class="column" style="background-color: #FFF; height: 60px; width: 60px; border-radius: 50px">
