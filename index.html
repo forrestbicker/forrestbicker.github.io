@@ -18,21 +18,50 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="parallax uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -128" style="background-image: url('assets/valley.jpeg'); height: 100vh">
-            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 1,0; y: 0,128; viewport: 0.5">
-                <canvas id='logo' width="128px" height="128px"></canvas>
-                <h1 class="title">Forrest Bicker</h1>
-                <h3 class="lined"> some stuff I made </h3>
-                <div class="row dual-center">
-                    <div id="github-button"></div>
-                    <div style="width: 2vw"></div>
-                    <div id="linkedin-button"></div>
-                </div>
+    <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 37.5vh" style="height: 0;">
+        <nav class="uk-navbar-container" uk-navbar="mode: click" style="background-image: linear-gradient(to right, #5C8CCC , #DD73A3);">
+            <div class="uk-navbar-left">
+                <ul style="padding: 10px;" class="uk-navbar-nav">
+                    <li><canvas id="static-logo" width="64px" height="64px"></canvas></li>
+                    <li>
+                        <p class="navbar-title">Forrest Bicker</p>
+                    </li>
+                    <!-- <li><a href="option 2">option</a></li> -->
+                    <!-- <li><a href=""></a></li> -->
+                </ul>
             </div>
-            <div style="    position: absolute;
-    left: 0;
-    bottom: 0;" class="grass dual-center section">
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="window.open('assets/ForrestBickerResume.pdf')">Resume</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <div class="wrapper">
+        <div class="parallax uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -128,-256" style="background-image: url('assets/valley.jpeg'); height: 100vh">
+            <!-- <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 1,0; y: 0,128; viewport: 0.5"> -->
+            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+
+
+                <div uk-parallax="opacity: 1,0; y: 0,128; viewport: 0.5">
+                    <canvas id='dynamic-logo' width="128px" height="128px"></canvas>
+                    <h1 class="title">Forrest Bicker</h1>
+                    <h3 class="lined"> some stuff I made </h3>
+                    <div class="row dual-center">
+                        <div id="github-button"></div>
+                        <div style="width: 2vw"></div>
+                        <div id="linkedin-button"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grass dual-center section">
                 <div class="grad"></div>
             </div>
         </div>
