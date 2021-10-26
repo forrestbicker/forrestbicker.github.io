@@ -17,11 +17,21 @@ body {
     line-height: 1.5;
 }
 
+p.navbar-title {
+    font-family: OperatorMono, monospace;
+    font-size: 2em;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    transform: translateY(-58%);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Roboto, sans-serif;
-    font-size: 1em;
+    /* font-size: 1em;
     line-height: 1.2;
-    margin: 0 0 0.75em;
+    margin: 0 0 0.75em; */
 }
 
 p {
@@ -29,7 +39,7 @@ p {
 }
 
 a {
-    color: #ffffff;
+    /* color: #ffffff; */
     transition: color 150ms ease;
     text-decoration: none;
 }
@@ -279,6 +289,7 @@ mark {
     position: absolute;
     z-index: 7;
     opacity: 1;
+    font-size: large;
 }
 
 .outline {
@@ -313,4 +324,8 @@ mark {
     /* background-colour: Reba(255, 255, 255, 0.7); */
     backdrop-filter: blur(10px);
     margin: -20px;
+}
+
+.dark {
+    color: #16184A;
 }
