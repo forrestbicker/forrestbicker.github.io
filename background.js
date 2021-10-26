@@ -147,7 +147,7 @@ function buildSorter(n) {
         cutoff++
     }
 
-    maxHeight = canvas.clientHeight / 3 // only display on botom 1/3 of pannel
+    maxHeight = canvas.clientHeight * 0.8 / 3 // only display on botom 1/3 of pannel
     maxWidth = Math.trunc(canvas.clientWidth * 1.1) // make sure extends off of screen
 
     widthUnit = Math.floor(1.0 * maxWidth / n); // here n = number of values
@@ -161,7 +161,7 @@ function buildSorter(n) {
                 width="${widthUnit}"
                 height="${height}"
                 x="${i * widthUnit}"
-                y="${canvas.clientHeight - height}"
+                y="${canvas.clientHeight * 0.8 - height + 10}"
                 style="fill: #E2E8F0">
                 </rect>`;
     }
@@ -176,9 +176,9 @@ function buildEpidemic(n) {
     heightUnit = Math.floor(1.0 * maxHeight / (min + (n - 1))); // here n = max value
 
     let newInnerHTML = ""
-    for (var i = 0; i < values.length; i++) {
-        newInnerHTML += `<circle cx="${x}" cy="${y}" r="16" fill="red" />`
-    }
+    // for (var i = 0; i < values.length; i++) {
+    //     newInnerHTML += `<circle cx="${x}" cy="${y}" r="16" fill="red" />`
+    // }
     canvas.innerHTML = newInnerHTML;
 }
 
