@@ -66,6 +66,10 @@ h1.light {
     text-shadow: 3px 3px 0px #2a3990;
 }
 
+.navgrad {
+    background-image: linear-gradient(to right, #e3e5ff, #d6d8ff);
+}
+
 h3 {
     font-weight: 300;
     font-size: 3em;
@@ -106,6 +110,7 @@ mark {
 
 .lined:before, .lined:after {
     background-color: #283258;
+    color: #283258;
     content: "";
     display: inline-block;
     height: 2.5px;
