@@ -169,20 +169,7 @@ function buildSorter(n) {
     canvas.innerHTML = newInnerHTML;
 }
 
-function buildEpidemic(n) {
-    canvas = document.getElementById("epidemic");
-
-    widthUnit = Math.floor(1.0 * maxWidth / n); // here n = number of values
-    heightUnit = Math.floor(1.0 * maxHeight / (min + (n - 1))); // here n = max value
-
-    let newInnerHTML = ""
-    // for (var i = 0; i < values.length; i++) {
-    //     newInnerHTML += `<circle cx="${x}" cy="${y}" r="16" fill="red" />`
-    // }
-    canvas.innerHTML = newInnerHTML;
-}
 
 buildButton("https://github.com/forrestbicker", "fa fa-github", "github-button"); buildButton("https://www.linkedin.com/in/forrestbicker/", "fa fa-linkedin-square", "linkedin-button")
 
 buildSorter(80)
-buildEpidemic(20)
