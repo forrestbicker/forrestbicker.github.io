@@ -3,6 +3,7 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
 @import url(fonts/OperatorMono/OperatorMono.css);
 @import url(fonts/DankMono/DankMono.css);
+
 html {
     box-sizing: border-box
 }
@@ -19,7 +20,6 @@ body {
 
 p.navbar-title {
     font-family: OperatorMono, monospace;
-    font-size: 2em;
     font-weight: 300;
     position: absolute;
     top: 50%;
@@ -209,8 +209,15 @@ mark {
 }
 
 .content {
-    transform: translateZ(0px);
-    -ms-transform: translateZ(0px)
+    /* transform: translateZ(0px);
+    -ms-transform: translateZ(0px) */
+}
+
+img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10%;
+    object-fit: contain;
 }
 
 .project {
@@ -224,6 +231,12 @@ mark {
     /* margin-right: auto; */
     background-size: cover;
     /* float: none; */
+}
+
+.banner {
+    background: #16184A;
+    height: 20vh;
+    background-size: cover;
 }
 
 .grad {
@@ -346,4 +359,8 @@ mark {
 
 .dark {
     color: #16184A;
+}
+
+.responsive-medium {
+    font-size: 2.5rem;
 }
