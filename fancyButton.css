@@ -86,3 +86,159 @@ ul.icons a {
     padding: 0;
     font-size: 1em;
 }
+
+/* - Buttons */
+.animated-button {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.animated-button span {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    text-shadow: 0 17px 0 var(--teal);
+}
+
+.animated-button span em {
+    min-width: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    backface-visibility: hidden;
+    transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.animated-button span em:nth-child(1) {
+    transition-delay: 0.025s;
+}
+
+.animated-button span em:nth-child(2) {
+    transition-delay: 0.05s;
+}
+
+.animated-button span em:nth-child(3) {
+    transition-delay: 0.075s;
+}
+
+.animated-button span em:nth-child(4) {
+    transition-delay: 0.1s;
+}
+
+.animated-button span em:nth-child(5) {
+    transition-delay: 0.125s;
+}
+
+.animated-button span em:nth-child(6) {
+    transition-delay: 0.15s;
+}
+
+.animated-button span em:nth-child(7) {
+    transition-delay: 0.175s;
+}
+
+.animated-button span em:nth-child(8) {
+    transition-delay: 0.2s;
+}
+
+.animated-button span em:nth-child(9) {
+    transition-delay: 0.225s;
+}
+
+.animated-button span em:nth-child(10) {
+    transition-delay: 0.25s;
+}
+
+.animated-button span em:nth-child(11) {
+    transition-delay: 0.275s;
+}
+
+
+a.btn,
+.btn,
+.single-post-text input[type="submit"],
+button {
+    padding: 0 35px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 64px;
+    line-height: 62px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #585d65;
+    cursor: pointer;
+    border-radius: 64px;
+    -moz-border-radius: 64px;
+    -webkit-border-radius: 64px;
+    -khtml-border-radius: 64px;
+    transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+    -moz-transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+    -webkit-transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+    -o-transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+}
+
+a.btn:hover,
+.btn:hover,
+.single-post-text input[type="submit"]:hover,
+button:hover {
+    border-color: var(--teal);
+}
+
+a.btn:hover .animated-button em,
+.btn:hover .animated-button em,
+.single-post-text input[type="submit"]:hover .animated-button em,
+button:hover .animated-button em {
+    transform: translateY(calc(16px * -1));
+}
+
+a.btn:hover .icon,
+.btn:hover .icon,
+.single-post-text input[type="submit"]:hover .icon,
+button:hover .icon {
+    color: #68e0cf;
+    transform: translateX(6px);
+    -webkit-transform: translateX(6px);
+    -moz-transform: translateX(6px);
+    -o-transform: translateX(6px);
+}
+
+
+a.btn .icon,
+.btn .icon,
+button .icon {
+    margin-left: 10px;
+    transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+    -moz-transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+    -webkit-transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+    -o-transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+}
+
+a:hover .animated-button em {
+    transform: translateY(calc(16px * -1));
+}
+
+.animated-button em {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Poppins";
+    color: inherit;
+}
