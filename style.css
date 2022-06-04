@@ -34,6 +34,7 @@ p.navbar-title {
     top: 50%;
     margin: 0;
     transform: translateY(-58%);
+    padding: 10 px
 }
 
 h1, h2, h3, h4, h5, h6 {
