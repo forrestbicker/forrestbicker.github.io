@@ -3,6 +3,15 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
 @import url(fonts/OperatorMono/OperatorMono.css);
 @import url(fonts/DankMono/DankMono.css);
+@import url(fonts/Poppins/Poppins.css);
+
+
+:root {
+    --offwhite: #eeffff;
+    --teal: #017e7f;
+    --purple: #16184a;
+    --lightblue: #2a3990;
+}
 
 html {
     box-sizing: border-box
@@ -358,7 +367,11 @@ img {
 }
 
 .dark {
-    color: #16184A;
+    color: var(--purple);
+}
+
+.light {
+    color: var(--offwhite);
 }
 
 .responsive-medium {
