@@ -57,24 +57,35 @@ function buildLogo(n, ctx) {
         //     max = data[y][x];
         // }
     }
-
-
-    // ctx.beginPath()
-    // let a = Math.trunc(255 * (1 - data[0][0] / max));
-    // ctx.fillStyle = `rgba(${a}, ${a}, ${a})`;
-    // ctx.moveTo(0, 0);
-
-    // for (var i = 0; i < WIDTH; i++) {
-    //     for (var j = 0; j < WIDTH; j++) {
-    //         let a = Math.trunc(255 * (1 - data[i][j] / max));
-    //         ctx.fillStyle = `rgba(${a}, ${a}, ${a})`;
-    //         ctx.lineTo(j, i);
-    //     }
-    // }
-    // ctx.closePath()
-    // ctx.stroke();
-
 }
+function setupAnimatedButtons() {
+    buttons = document.getElementsByClassName("animated-button")
+    for (var i = 0; i < buttons.length; i++) {
+        text = buttons[i].textContent;
+        newText = "<span>";
+        for (var j = 0; j < text.length; j++) {
+            newText += `<em>${text[j]}</em>`;
+        }
+        newText += "</span>";
+        buttons[i].innerHTML = newText;
+    }
+}
+
+// ctx.beginPath()
+// let a = Math.trunc(255 * (1 - data[0][0] / max));
+// ctx.fillStyle = `rgba(${a}, ${a}, ${a})`;
+// ctx.moveTo(0, 0);
+
+// for (var i = 0; i < WIDTH; i++) {
+//     for (var j = 0; j < WIDTH; j++) {
+//         let a = Math.trunc(255 * (1 - data[i][j] / max));
+//         ctx.fillStyle = `rgba(${a}, ${a}, ${a})`;
+//         ctx.lineTo(j, i);
+//     }
+// }
+// ctx.closePath()
+// ctx.stroke();
+
 
 function polarToPara(r, theta) {
     let x = (r * Math.cos(theta) * RESOLUTION / 2 + RESOLUTION / 2);
@@ -97,7 +108,7 @@ i = 0
 nMax = 6;
 nMin = 4.25;
 let WIDTH = 64;
-buildLogo(nMin, staticCtx);
+buildLogo(5, staticCtx);
 WIDTH = 128;
 
 setInterval(function () {
@@ -173,3 +184,4 @@ function buildSorter(n) {
 buildButton("https://github.com/forrestbicker", "fa fa-github", "github-button"); buildButton("https://www.linkedin.com/in/forrestbicker/", "fa fa-linkedin-square", "linkedin-button")
 
 buildSorter(80)
+setupAnimatedButtons();
