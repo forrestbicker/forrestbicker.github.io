@@ -398,4 +398,17 @@ img {
 
 img.collaborator {
     border-radius: 50%;
+    -webkit-transition: opacity .4s, -webkit-transform .4s;
+    transition: opacity .4s, transform .4s, -webkit-transform .4s;
+}
+
+img.collaborator:hover {
+    transform: rotate(360deg);
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
 }
