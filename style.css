@@ -94,7 +94,7 @@ h4 {
 
 p, ul {
     font-size: 1.6em;
-    text-align: justify
+    /* text-align: justify */
 }
 
 a i {
