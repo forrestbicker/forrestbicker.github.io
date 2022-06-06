@@ -118,7 +118,11 @@ mark {
 
 /* Text with a line thru it: --hello-- */
 
-.lined:before, .lined:after {
+.lined {
+    display: inline;
+}
+
+/* .lined:before, .lined:after {
     background-color: #283258;
     color: #283258;
     content: "";
