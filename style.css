@@ -253,6 +253,14 @@ img {
     background-size: cover;
 }
 
+.footer {
+    background: #16184A;
+    height: 30vh;
+    padding-bottom: 10vh;
+    background-size: cover;
+}
+
+
 .grad {
     width: 100%;
     height: 32%;
