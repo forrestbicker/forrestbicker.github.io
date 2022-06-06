@@ -11,6 +11,7 @@
     --teal: #017e7f;
     --purple: #16184a;
     --lightblue: #2a3990;
+    --red: #D26EA2;
 }
 
 html {
@@ -230,7 +231,7 @@ mark {
 img {
     max-width: 90%;
     max-height: 90%;
-    border-radius: 10%;
+    /* border-radius: 10%; */
     object-fit: contain;
 }
 
@@ -411,4 +412,17 @@ a:hover {
     text-decoration: none !important;
 }
 
+/* grow on hover */
+img.logo-link:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img.logo-link {
+    margin: 0 8px;
+    padding: 20px;
+    -webkit-transition: opacity .4s, -webkit-transform .4s;
+    transition: opacity .4s, transform .4s, -webkit-transform .4s;
+    height: 100px;
+    max-height: 100px;
 }
