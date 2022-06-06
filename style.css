@@ -387,4 +387,7 @@ img {
     font-style: normal !important;
     color: var(--purple) !important;
 }
+
+img.collaborator {
+    border-radius: 50%;
 }
