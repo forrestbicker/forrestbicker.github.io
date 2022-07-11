@@ -429,4 +429,5 @@ img.logo-link {
     transition: opacity .4s, transform .4s, -webkit-transform .4s;
     height: 100px;
     max-height: 100px;
+    /* width: 18% */
 }
