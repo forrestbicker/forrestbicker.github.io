@@ -356,6 +356,14 @@ img {
     font-weight: bold;
 }
 
+.outline-dark {
+    color: black;
+    font-family: "DM Sans", sans-serif;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    font-style: normal;
+    font-weight: bold;
+}
+
 /* .white-outline span em {
     -webkit-text-stroke: 1px whiteblack;
 } */
