@@ -3,6 +3,7 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
 @import url(fonts/OperatorMono/OperatorMono.css);
 @import url(fonts/DankMono/DankMono.css);
+@import url(fonts/DMSans/DMSans.css);
 @import url(fonts/Poppins/Poppins.css);
 
 
@@ -20,12 +21,13 @@ html {
 
 body {
     background: #ffffff;
-    font-family: Roboto, sans-serif;
+    font-family: "DM Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #333;
     font-feature-settings: "kern", "liga", "pnum";
     font-size: 1em;
     line-height: 1.5;
+    letter-spacing: .25px;
 }
 
 p.navbar-title {
@@ -348,7 +350,7 @@ img {
 
 .outline {
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "DM Sans", sans-serif;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-style: normal;
     font-weight: bold;
