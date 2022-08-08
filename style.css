@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background: #ffffff;
+    background: var(--purple);
     font-family: "DM Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #333;
@@ -37,7 +37,8 @@ p.navbar-title {
     top: 50%;
     margin: 0;
     transform: translateY(-58%);
-    padding: 10 px
+    padding: 10px;
+    color: var(--purple);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -434,10 +435,25 @@ img.logo-link:hover {
 
 img.logo-link {
     margin: 0 8px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     -webkit-transition: opacity .4s, -webkit-transform .4s;
     transition: opacity .4s, transform .4s, -webkit-transform .4s;
     height: 100px;
     max-height: 100px;
     /* width: 18% */
+}
+
+div.container {
+    background: var(--purple);
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.experiences {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FFF;
 }

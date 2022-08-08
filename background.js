@@ -100,6 +100,10 @@ staticCanvas = document.getElementById('static-logo');
 if (staticCanvas.getContext) {
     var staticCtx = staticCanvas.getContext('2d');
 }
+staticCanvas2 = document.getElementById('static-logo-2');
+if (staticCanvas2.getContext) {
+    var staticCtx2 = staticCanvas2.getContext('2d');
+}
 dynamicCanvas = document.getElementById('dynamic-logo');
 if (dynamicCanvas.getContext) {
     var dynamicCtx = dynamicCanvas.getContext('2d');
@@ -108,7 +112,8 @@ i = 0
 nMax = 6;
 nMin = 4.25;
 let WIDTH = 64;
-buildLogo(5, staticCtx);
+buildLogo(4.25, staticCtx);
+buildLogo(4.25, staticCtx2);
 WIDTH = 128;
 
 setInterval(function () {

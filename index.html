@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <title>Forrest Bicker</title>
@@ -22,7 +23,6 @@
     <script src="js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/htmltypist.js/dist/typist.css">
-
     <meta name="google-site-verification" content="bpfgu58ztjB8bb9YQQ1kkUGBZ3xB4DMkIaf-6FH6d_g" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BF80ELN7MR"></script>
     <script>
@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 37.5vh" style="height:0" class="uk-box-shadow-xlarge">
+    <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 1px" style="height:0" class="uk-box-shadow-xlarge">
         <nav class="uk-navbar-container uk-box-shadow-xlarge" uk-navbar="mode: click" style="background-image: linear-gradient(to right, #e3e5ff , #d6d8ff);">
             <div class="uk-navbar-left">
                 <ul style="padding: 10px;" class="uk-navbar-nav">
@@ -50,7 +50,7 @@
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                     <!-- <li><a href="" style="color: #16184A; font-size: medium">Home</a></li> -->
-                    <li><a href="#title"><span class="animated-button dark">Home</span></a></li>
+                    <!-- <li><a href="#title"><span class="animated-button dark">Home</span></a></li> -->
                     <li><a href="/resume" target="_blank"><span class="animated-button dark">Resume</span></a></li>
                     <!-- <li><a href="mailto:forrestbicker@gmail.com" style="color: #16184A; font-size: medium">Contact</a></li> -->
                 </ul>
@@ -59,6 +59,29 @@
         </nav>
     </div>
     <div class="wrapper">
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul style="padding: 10px;" class="uk-navbar-nav">
+                        <li><canvas id="static-logo-2" width="64px" height="64px"></canvas></li>
+                        <li>
+                            <p class="navbar-title responsive-medium">Forrest Bicker</p>
+                        </li>
+                        <!-- <li><a href="option 2">option</a></li> -->
+                        <!-- <li><a href=""></a></li> -->
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <!-- <li><a href="" style="color: #16184A; font-size: medium">Home</a></li> -->
+                        <!-- <li><a href="#title"><span class="animated-button dark">Home</span></a></li> -->
+                        <li><a href="/resume" target="_blank"><span class="animated-button dark">Resume</span></a></li>
+                        <!-- <li><a href="mailto:forrestbicker@gmail.com" style="color: #16184A; font-size: medium">Contact</a></li> -->
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
         <div class="parallax uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -128,-256" style="background-image: url('assets/valley.jpeg'); height: 100vh">
             <!-- <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 1,0; y: 0,128; viewport: 0.5"> -->
             <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
@@ -103,12 +126,12 @@
 
 
     <div class="content">
-        <div class="dual-center banner">
-            <h2><u>About Me</u></h2>
-        </div>
-        <div class="dual-center project" style="height: 50vh">
-            <div style="display: flex; padding: 10%">
-                <div style="flex: 60%;">
+        <div class="container">
+            <div class="row dual-center banner">
+                <h2><u>About Me</u></h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8">
                     <p class="responsive-medium" style="color: white; text-align:justify; font-size: 2rem">
                         I'm Forrest, a sophmore studying CS & Math at Harvey Mudd and lover of data, math, AI, and robotics. I’m very excited about the future of technology and determined to be a driving force in the coming breakthroughs.
                         <br>
@@ -119,29 +142,26 @@
                         I love finding creative solutions to difficult problems and am always excited to tackle crazy projects alongside incredible people. If you share my passions or just want to chat please feel free to connect!
                     </p>
                 </div>
-                <div style="flex: 40%;">
-                    <img src="assets\pfps\forrestbicker.jpg" style="height: 40vh;border-radius: 10%">
+                <div class="col-12 col-md-4 dual-center">
+                    <img src="assets\pfps\forrestbicker.jpg" style="max-height: 40vh;border-radius: 10%">
                 </div>
             </div>
-        </div>
-        <div class="dual-center banner">
-            <h2><u>Experience</u></h2>
-            <!-- <br> -->
-        </div>
-        <div class="dual-center banner">
-            <div style="padding:10px; border-radius:20px; background-color: #FFF;">
-                <a href="https://aws.amazon.com/what-is-aws" target="_blank"><img class="logo-link" src="assets/logos/amazon.webp"></a>
-                <a href="https://www.cs.hmc.edu/~montanez/amistad.html" target="_blank"><img class="logo-link" src="assets/logos/amistad.png"></a>
-                <a href="https://www.alliancebernstein.com/corporate/en/home/about-us.html" target="_blank"><img class="logo-link" src="assets/logos/ab.png"></a>
-                <a href="https://getusppe.org" target="_blank"><img class="logo-link" src="assets/logos/getusppe.png"></a>
-                <a href="https://www.hireflow.ai" target="_blank"><img class="logo-link" src="assets/logos/hireflow.svg"></a>
+            <div class="row dual-center banner">
+                <h2><u>Experience</u></h2>
+                <!-- <br> -->
+            </div>
+            <div class="row dual-center no-margin experiences">
+                <div class="col-sm-12 col-md-4 col-lg"><a href="https://aws.amazon.com/what-is-aws" target="_blank"><img class="logo-link" src="assets/logos/amazon.webp"></a></div>
+                <div class="col-sm-12 col-md-4 col-lg"><a href="https://www.cs.hmc.edu/~montanez/amistad.html" target="_blank"><img class="logo-link" src="assets/logos/amistad.png"></a></div>
+                <div class="col-sm-12 col-md-4 col-lg"><a href="https://www.alliancebernstein.com/corporate/en/home/about-us.html" target="_blank"><img class="logo-link" src="assets/logos/ab.png"></a></div>
+                <div class="col-sm-12 col-md-4 col-lg"><a href="https://getusppe.org" target="_blank"><img class="logo-link" src="assets/logos/getusppe.png"></a></div>
+                <div class="col-sm-12 col-md-4 col-lg"><a href="https://www.hireflow.ai" target="_blank"><img class="logo-link" src="assets/logos/hireflow.svg"></a></div>
+            </div>
+
+            <div class="row dual-center banner">
+                <h2><u>My projects</u></h2>
             </div>
         </div>
-
-        <div class="dual-center banner">
-            <h2><u>My projects</u></h2>
-        </div>
-
 
         <div class="parallax-project-container" style="background-image: url(assets/backgrounds/coarsegrain.png);" uk-parallax="bgy: 128,-128">
             <div class="project-text-container dual-center" style="color: black">
@@ -221,7 +241,7 @@
                             <a href="https://www.linkedin.com/in/alec-thompson-a382b0204/" target="_blank">
                                 <img class="collaborator" src="assets/pfps/slugzilla.jpg" width="48" height="48">
                             </a>
-                        }
+                            }
                         </p>
                     </div>
                 </div>
