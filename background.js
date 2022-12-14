@@ -3,7 +3,7 @@ function f(theta, n) {
     return Math.cos(Math.asin(1) * 3 / n) / Math.cos(Math.asin(Math.sin(n * theta / 4)) * 3 / n)
 }
 
-function buildLogo(n, ctx) {
+function buildLogo(n, ctx, WIDTH) {
 
     let data = [];
     var gradient = ctx.createRadialGradient(WIDTH / 2, WIDTH / 2, 10, WIDTH / 2, WIDTH / 2, WIDTH / 2);
@@ -41,7 +41,7 @@ function buildLogo(n, ctx) {
 
         let r = f(theta, n);
 
-        let [x, y] = polarToPara(r, theta);
+        let [x, y] = polarToPara(r, theta, WIDTH);
 
         ctx.lineTo(x, y);
         if (i % 1700 == 0) {
@@ -87,7 +87,7 @@ function setupAnimatedButtons() {
 // ctx.stroke();
 
 
-function polarToPara(r, theta) {
+function polarToPara(r, theta, WIDTH) {
     let x = (r * Math.cos(theta) * RESOLUTION / 2 + RESOLUTION / 2);
     x = (x / (RESOLUTION / WIDTH));
     let y = (r * Math.sin(theta) * RESOLUTION / 2 + RESOLUTION / 2);
@@ -96,39 +96,42 @@ function polarToPara(r, theta) {
     return [x, y];
 }
 
-staticCanvas = document.getElementById('static-logo');
-if (staticCanvas.getContext) {
-    var staticCtx = staticCanvas.getContext('2d');
-}
-staticCanvas2 = document.getElementById('static-logo-2');
-if (staticCanvas2.getContext) {
-    var staticCtx2 = staticCanvas2.getContext('2d');
-}
-dynamicCanvas = document.getElementById('dynamic-logo');
-if (dynamicCanvas.getContext) {
-    var dynamicCtx = dynamicCanvas.getContext('2d');
-}
-i = 0
-nMax = 6;
-nMin = 4.25;
-let WIDTH = 64;
-buildLogo(4.25, staticCtx);
-buildLogo(4.25, staticCtx2);
-WIDTH = 128;
 
-setInterval(function () {
-    dynamicCtx.clearRect(0, 0, WIDTH, WIDTH);
-    if (nMin + i <= nMax) {
-        buildLogo(nMin + i, dynamicCtx);
-    } else {
-        buildLogo(2 * nMax - nMin - i, dynamicCtx);
+function setupLogos() {
+    i = 0
+    nMax = 6;
+    nMin = 4.25;
+
+    staticCanvas = document.getElementById('static-logo');
+    if (staticCanvas.getContext) {
+        var staticCtx = staticCanvas.getContext('2d');
     }
-    i += 0.125 / 32;
-    if (2 * nMax - nMin - i <= nMin) {
-        i = 0;
+    buildLogo(4.25, staticCtx, 64);
+    
+    staticCanvas2 = document.getElementById('static-logo-2');
+    if (staticCanvas2.getContext) {
+        var staticCtx2 = staticCanvas2.getContext('2d');
     }
-}, 60);
-// buildLogo();
+    buildLogo(4.25, staticCtx2, 64);
+    let WIDTH = 128;
+
+    dynamicCanvas = document.getElementById('dynamic-logo');
+    if (dynamicCanvas.getContext) {
+        var dynamicCtx = dynamicCanvas.getContext('2d');
+    }
+    setInterval(function () {
+        dynamicCtx.clearRect(0, 0, WIDTH, WIDTH);
+        if (nMin + i <= nMax) {
+            buildLogo(nMin + i, dynamicCtx, WIDTH);
+        } else {
+            buildLogo(2 * nMax - nMin - i, dynamicCtx, WIDTH);
+        }
+        i += 0.125 / 32;
+        if (2 * nMax - nMin - i <= nMin) {
+            i = 0;
+        }
+    }, 60);
+}
 
 
 
@@ -185,8 +188,8 @@ function buildSorter(n) {
     canvas.innerHTML = newInnerHTML;
 }
 
-
-buildButton("https://github.com/forrestbicker", "fa fa-github", "github-button"); buildButton("https://www.linkedin.com/in/forrestbicker/", "fa fa-linkedin-square", "linkedin-button")
-
-buildSorter(80)
 setupAnimatedButtons();
+setupLogos();
+buildButton("https://github.com/forrestbicker", "fa fa-github", "github-button")
+buildButton("https://www.linkedin.com/in/forrestbicker/", "fa fa-linkedin-square", "linkedin-button")
+buildSorter(80);

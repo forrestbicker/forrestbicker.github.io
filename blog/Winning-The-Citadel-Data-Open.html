@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Forrest Bicker</title>
+    <meta property="og:title" content="Winning the Citadel Data Open">
+    <meta property="og:url" content="https://forrestbicker.com">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Project Portfolio">
+    <meta property="og:image" content="https://forrestbicker.com/assets/preview.jpg">
+    <link rel="icon" href="../assets/favicon.png" type="image/icon type">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://forrestbicker.com">
+    <meta name="description" content="Last week three friends and I competed in the 2022 Citadel Data Open Championship, a premier Machine Learning and Data Science competition with a $100,000 cash grand prize. Yesterday, our team was humbled to be named the 1st place global champions. Today, I decided to share a brief summary of the whole experience. We will be releasing our winning submission in the near future." />
+    <meta property="og:description" content="Last week three friends and I competed in the 2022 Citadel Data Open Championship, a premier Machine Learning and Data Science competition with a $100,000 cash grand prize. Yesterday, our team was humbled to be named the 1st place global champions. Today, I decided to share a brief summary of the whole experience. We will be releasing our winning submission in the near future.">
+    <link rel="stylesheet" href="../css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <link rel="stylesheet" href="../fancyButton.css">
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/htmltypist.js/dist/typist.css">
+    <meta name="google-site-verification" content="bpfgu58ztjB8bb9YQQ1kkUGBZ3xB4DMkIaf-6FH6d_g" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BF80ELN7MR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BF80ELN7MR');
+    </script>
+</head>
+
+<body>
+    <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 0px" style="height:0" class="uk-box-shadow-xlarge">
+        <nav class="uk-navbar-container uk-box-shadow-xlarge" uk-navbar="mode: click" style="background-image: linear-gradient(to right, var(--purple) , var(--offpurple));">
+            <div class="uk-navbar-left">
+                <ul style="padding: 10px;" class="uk-navbar-nav">
+                    <li><canvas id="static-logo" width="64px" height="64px"></canvas></li>
+                    <li>
+                        <p class="navbar-title responsive-medium light">Forrest Bicker</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="../resume" target="_blank"><span class="animated-button light">Resume</span></a></li>
+                    <!-- <li><a href="mailto:forrestbicker@gmail.com" style="color: #16184A; font-size: medium">Contact</a></li> -->
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <div class="content" style="background: #e3e5ff;">
+        <div class="container" style="background: #e3e5ff;padding-right:11vw; padding-left:11vw">
+            <div class=" row dual-center banner" style="background: #e3e5ff;">
+            </div>
+            <div class="row top-bot-border" style="background: #e3e5ff;">
+                <h1>Winning the Citadel Data Open</h1>
+                <img src="../assets/blog/dataopenlogo.png" class="center-img" style="width: 35%; padding: 0;" />
+                <img src="../assets/blog/citadellogo.png" class="center-img" style="width: 35%; padding: 0;" />
+            </div>
+            <div class="row">
+                <h3>Introduction</h3>
+                <p class="responsive-small">Last week three friends and I competed in the 2022 Citadel Data Open Championship, a premier Machine Learning and Data Science competition with a $100,000 cash grand prize. Yesterday, our team was humbled to be named the 1st place global champions. Today, I decided to share a brief summary of our experience. We will be publicly releasing our winning submission in the near future.</p>
+
+                <figure>
+                    <img src="../assets/blog/dataopen.jpg" class="center-img" />
+                    <figcaption>Champions!</figcaption>
+                </figure>
+
+                <p class="responsive-small">After winning Citadel’s West Coast Fall Datathon over a year ago with an NLP-powered, clickbait classifying SVM, my friends and I earned ourselves a ticket to the elusive Data Open Championship. Twenty-one other top teams from across ten regional Datathons were invited to compete among us in the competition, including teams of Masters and PhD students from the world's best schools. After much anticipation, on November 30th the competition’s problem statement and dataset were finally released: to analyze America’s postsecondary educational institutions using the IPEDS dataset, which includes a depth of granular information about school demographics, finances, admissions, and completions. We were then given four days to pose a novel research question, answer it using mathematic, statistical, and computational modeling, then write a technical report detailing our methods and findings.</p>
+                <figure>
+                    <img src="../assets/blog/dataopencover.jpg" class="center-img" />
+                    <figcaption>Citadel | Securities NYSE championship tour</figcaption>
+                </figure>
+                <h3>Scope</h3>
+                <p class="responsive-small">Given the prohibitively short time-span of the competition, our team quickly decided to focus on an impactful yet straightforward question that we could feasibly analyze with meaningful depth, precision, and rigor. After an initial survey of the <a target="_blank" href="https://nces.ed.gov/ipeds/use-the-data">IPEDS</a> data and potential auxiliary data sources, we decided to focus our efforts on exploring how various institution-level factors correlate with graduating students with high incomes and low debt. We settled on this question both due to its appeal as a particularly relevant topic and because we believed we had enough high-quality data to support a robust analysis of the subject after pulling in supplementary datasets from <a target="_blank" href="https://collegescorecard.ed.gov">The College Scorecard</a> and <a target="_blank" href="https://www.payscale.com/">PayScale</a>.</p>
+                <br>
+                <h3>Models</h3>
+                <p class="responsive-small">We used a Robust Weighted Least Squares Two-Way Fixed Effects Model to analyze trends in our longitudinal population-scale data while controlling for and quantifying heterogeneity of temporal trends and institutional differences. We combined our this analysis with the popular techniques of k-means clustering and multiple linear regression to better understand institutional commonalities and cross-sectional relationships. To ensure robustness, we took care to vet our models against the Gauss-Markov assumptions for statistical validity, including Multicollinearity, Specification Error, Heteroskedasticity, and Residual Normality, as well as corrections for Outliers and Overfitting.</p>
+                <figure>
+                    <img src="../assets/blog/dataopenviz.png" class="center-img" />
+                    <figcaption>k-means clusters with PCA visualization and covariance matrix for VIF testing</figcaption>
+                </figure>
+
+                <h3>Interpretation</h3>
+                <p class="responsive-small">To make sure we could draw meaningful results from our analysis, we selected our models with an emphasis on interpretability. We were able to reverse-engineer human-interpretable labels for our k-means clusters by examining the feature distributions over each cluster and extract the significant standardized feature coefficients and fixed effects of our regressions to quantify relationships between our variables. Since we had separate models for early-career pay, mid-career pay, and debt, we were also able to analyze patterns in how institutional factors affected different dependent variables, which gave rise to some memorable findings. After several back-to-back all-day grind sessions, we were able to round off our research and technical report in time to submit a whole 4 minutes before the deadline.</p>
+                <br>
+                <h3>Conclusion</h3>
+                <p class="responsive-small">We had an amazing time with this series of competitions and are excited for what future adventures lie ahead! I hope you enjoyed hearing a bit about our process. If you want to chat, please feel free to <a href="https://www.linkedin.com/in/forrestbicker">connect</a>!</p>
+                <br>
+                <h3>Acknowledgements</h3>
+                <p class="responsive-small">Huge thanks to my teammates <a target="_blank" href="https://davidxchen.com">David “X” Chen</a>, <a target="_blank" href="https://miloknell.github.io/personal-website">Milo “Garrett” Knell</a>, and <a target="_blank" href="https://alanwu.xyz">Alan “🐿️” Wu</a> for making the grind a fun and unforgettable experience. Special thanks to Professor Linus Yamane, he beautifully taught us many of the techniques we used in our investigation and inspired our appreciation for traditional statistical modeling. I also appreciate my previous research supervisor Professor Lucas Bang for kindly letting us use his lab as a work space during the competition. Shout out to our friend and mentor Sahil Rane whose team managed to snag the impressive runner up title. And of course thank you Citadel and Correlation One for organizing the events.</p>
+            </div>
+        </div>
+</body>
+
+<footer>
+    <script rel="script" src="../background.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmltypist.js/dist/typist.js"></script>
+</footer>
+
+</html>
