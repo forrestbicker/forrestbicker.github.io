@@ -38,12 +38,14 @@
     <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 0px" style="height:0" class="uk-box-shadow-xlarge">
         <nav class="uk-navbar-container uk-box-shadow-xlarge" uk-navbar="mode: click" style="background-image: linear-gradient(to right, var(--purple) , var(--offpurple));">
             <div class="uk-navbar-left">
-                <ul style="padding: 10px;" class="uk-navbar-nav">
-                    <li><canvas id="static-logo" width="64px" height="64px"></canvas></li>
-                    <li>
-                        <p class="navbar-title responsive-medium light">Forrest Bicker</p>
-                    </li>
-                </ul>
+                <!-- <a href="/"> -->
+                    <ul style="padding: 10px;" class="uk-navbar-nav">
+                        <a href="/"><li><canvas id="static-logo" width="64px" height="64px"/></li></a>
+                        <li>
+                            <p class="navbar-title responsive-medium"><a href="/" class="light">Forrest Bicker</a></p>
+                        </li>
+                    </ul>
+                <!-- </a> -->
             </div>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
@@ -63,6 +65,8 @@
                 <img src="../assets/blog/dataopenlogo.png" class="center-img" style="width: 35%; padding: 0;" />
                 <img src="../assets/blog/citadellogo.png" class="center-img" style="width: 35%; padding: 0;" />
             </div>
+            <br>
+            <p class="responsive-small" style="text-align: right; margin: 0;">December 13th, 2022</p>
             <div class="row">
                 <h3>Introduction</h3>
                 <p class="responsive-small">Last week three friends and I competed in the 2022 Citadel <a href="https://www.citadel.com/careers/the-data-open">Data Open Championship</a>, a premier Machine Learning and Data Science competition with a $100,000 cash grand prize. Yesterday, our team was humbled to be named the 1st place global champions. Today, I decided to share a brief summary of our experience. We plan to publicly release our winning submission in the near future.</p>
