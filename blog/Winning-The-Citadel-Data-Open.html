@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <title>Forrest Bicker</title>
+    <title>Winning the Citadel Data Open</title>
     <meta property="og:title" content="Winning the Citadel Data Open">
     <meta property="og:url" content="https://forrestbicker.com/blog/Winning-The-Citadel-Data-Open.html">
     <meta property="og:type" content="website">
@@ -65,22 +65,22 @@
             </div>
             <div class="row">
                 <h3>Introduction</h3>
-                <p class="responsive-small">Last week three friends and I competed in the 2022 Citadel Data Open Championship, a premier Machine Learning and Data Science competition with a $100,000 cash grand prize. Yesterday, our team was humbled to be named the 1st place global champions. Today, I decided to share a brief summary of our experience. We plan to publicly release our winning submission in the near future.</p>
+                <p class="responsive-small">Last week three friends and I competed in the 2022 Citadel <a href="https://www.citadel.com/careers/the-data-open">Data Open Championship</a>, a premier Machine Learning and Data Science competition with a $100,000 cash grand prize. Yesterday, our team was humbled to be named the 1st place global champions. Today, I decided to share a brief summary of our experience. We plan to publicly release our winning submission in the near future.</p>
 
                 <figure>
                     <img src="../assets/blog/dataopen.jpg" class="center-img" />
                     <figcaption>Champions! (Artist rendition)</figcaption>
                 </figure>
 
-                <p class="responsive-small">After winning Citadel’s West Coast Fall Datathon over a year ago with an NLP and transfer learning powered SVM clickbait classifer, my friends and I earned ourselves a ticket to the elusive Data Open Championship. Twenty-one other top teams from across ten regional Datathons were invited to compete among us in the competition, including teams of Masters and PhD students from the world's best schools. After much anticipation, on November 30th the competition’s problem statement and dataset were finally released: to analyze America’s postsecondary educational institutions using the <a target="_blank" href="https://nces.ed.gov/ipeds/use-the-data">IPEDS</a> dataset, which includes a depth of granular information about school demographics, finances, admissions, and completions. We were then given four days to pose a novel research question, answer it using mathematic, statistical, and computational modeling, then write a technical report detailing
-                    our methods and findings.</p>
+                <p class="responsive-small">After <a target="_blank" href="https://www.hmc.edu/about/2022/01/08/harvey-mudd-college-wins-citadel-west-coast-data-open">winning Citadel’s West Coast Fall Datathon</a> over a year ago with an NLP and transfer-learning powered SVM clickbait classifer, my friends and I earned ourselves a ticket to the elusive Data Open Championship. Twenty-one other top teams from across ten regional Datathons were invited to compete among us for the $100,000 grand prize. The competition has been <a target="_blank" href="https://www.correlation-one.com/blog/the-data-open-championship-2021">described</a> as "the largest and most prestigious university-level data science competition in the world" with previous top teams including PhD students from MIT, Stanford, Yale, Berkley, and Cambridge.</p>
+                <br>
+                <p>After much anticipation, on November 30th the competition’s problem statement and dataset were finally released: to analyze America’s postsecondary educational institutions using the <a target="_blank" href="https://nces.ed.gov/ipeds/use-the-data">IPEDS</a> dataset, which includes a depth of granular information about school demographics, finances, admissions, and completions. We were then given four days to pose a novel research question, answer it using mathematic, statistical, and computational modeling, then write a technical report detailing our methods and findings.</p>
                 <figure>
                     <img src="../assets/backgrounds/dataopen.jpg" class="center-img" />
                     <figcaption>Citadel | Securities NYSE championship tour</figcaption>
                 </figure>
                 <h3>Scope</h3>
                 <p class="responsive-small">Given the prohibitively short time-span of the competition, our team quickly decided to focus on an impactful yet straightforward question that we could feasibly analyze with meaningful depth, precision, and rigor. After an initial survey of the IPEDS data and potential auxiliary data sources, we decided to focus our efforts on exploring how various institution-level factors correlate with graduating students with high incomes and low debt. We settled on this question both due to its appeal as a particularly relevant topic and because we believed we had enough high-quality data to support a robust analysis of the subject after pulling in supplementary datasets from <a target="_blank" href="https://collegescorecard.ed.gov">The College Scorecard</a> and <a target="_blank" href="https://www.payscale.com/">PayScale</a>.</p>
-                <br>
                 <h3>Models</h3>
                 <p class="responsive-small">We used a Robust Weighted Least Squares Two-Way Fixed Effects Model to analyze trends in our longitudinal population-scale data while controlling for and quantifying heterogeneity of temporal trends and institutional differences. We combined our this analysis with the popular techniques of k-means clustering and multiple linear regression to better understand institutional commonalities and cross-sectional relationships. To ensure robustness, we took care to vet our models against the Gauss-Markov assumptions for statistical validity, including Multicollinearity, Specification Error, Heteroskedasticity, and Residual Normality, as well as corrections for Outliers and Overfitting.</p>
                 <figure>
@@ -92,7 +92,8 @@
                 <p class="responsive-small">To make sure we could draw meaningful results from our analysis, we selected our models with an emphasis on interpretability. We were able to reverse-engineer human-interpretable labels for our k-means clusters by examining the feature distributions over each cluster and extract the significant standardized feature coefficients and fixed effects of our regressions to quantify relationships between our variables. Since we had separate models for early-career pay, mid-career pay, and debt, we were also able to analyze patterns in how institutional factors affected different dependent variables, which gave rise to some memorable findings. After several back-to-back all-day grind sessions, we were able to round off our research and technical report in time to submit a whole 4 minutes before the deadline.</p>
                 <br>
                 <h3>Conclusion</h3>
-                <p class="responsive-small">We had an amazing time with this series of competitions and are excited for what future adventures lie ahead! I hope you enjoyed hearing a bit about our process. If you'd like to chat, please feel free to <a href="https://www.linkedin.com/in/forrestbicker">connect</a>!</p>
+
+                <p class="responsive-small">The Data Open Championship was an incredible opportunity to use the power of data analytics to explore impactful questions about our world. We had an amazing time with this series of competitions and are excited for what future adventures lie ahead! I hope you enjoyed hearing a bit about our process. If you'd like to chat, please feel free to <a href="https://www.linkedin.com/in/forrestbicker">connect</a>!</p>
                 <br>
                 <h3>Acknowledgements</h3>
                 <p class="responsive-small">Huge thanks to my teammates <a target="_blank" href="https://davidxchen.com">David “X” Chen</a>, <a target="_blank" href="https://miloknell.github.io/personal-website">Milo “Garrett” Knell</a>, and <a target="_blank" href="https://alanwu.xyz">Alan “🐿️” Wu</a> for making the grind a fun and unforgettable experience. Special thanks to Professor Linus Yamane who beautifully taught us many of the techniques we used in our investigation and inspired our appreciation for traditional statistical modeling. We also appreciate my previous research supervisor Professor Lucas Bang for kindly letting us work in his lab during the competition. Shout out to our friend and mentor <a target="_blank" href="https://www.linkedin.com/in/sahilrane">Sahil Rane</a> whose team managed to snag the runner up title. And of course thank you Citadel and Correlation One for organizing the events.</p>
