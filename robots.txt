@@ -19,4 +19,18 @@ Disallow: /assets/logos/amistad.png
 Disallow: /assets/logos/aws.png
 Disallow: /assets/logos/getusppe.png
 Disallow: /assets/logos/hireflow.svg
-
+Disallow: /assets/pfps/adam.jpg
+Disallow: /assets/pfps/alan.jpg
+Disallow: /assets/pfps/bang.jpg
+Disallow: /assets/pfps/benjamin.jpg
+Disallow: /assets/pfps/cody.jpg
+Disallow: /assets/pfps/david.jpg
+Disallow: /assets/pfps/drloverde.jpg
+Disallow: /assets/pfps/eszter.jpg
+Disallow: /assets/pfps/milo.jpg
+Disallow: /assets/pfps/milo2.jpg
+Disallow: /assets/pfps/montanez.jpg
+Disallow: /assets/pfps/phu.jpg
+Disallow: /assets/pfps/sahil.jpg
+Disallow: /assets/pfps/slugzilla.jpg
+Disallow: /assets/pfps/tiger.jpg
