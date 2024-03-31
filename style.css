@@ -57,6 +57,10 @@ p {
     margin: 0 0 0.75em
 }
 
+li {
+    font-size: 1.6em;
+}
+
 a {
     /* color: #ffffff; */
     transition: color 150ms ease;
