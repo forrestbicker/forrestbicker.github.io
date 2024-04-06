@@ -477,6 +477,11 @@
   margin: 0;
 }
 
+.u-section-3 .u-btn-1 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-section-3 .u-image-1 {
   min-height: 250px;
   background-image: url("images/dataopenchampions.jpg");
@@ -589,6 +594,11 @@
 
 .u-section-4 .u-text-1 {
   margin: 0;
+}
+
+.u-section-4 .u-btn-1 {
+  background-image: none;
+  padding: 0;
 }
 
 @media (max-width: 1199px) {
