@@ -14,8 +14,8 @@ for file in os.listdir('./blog'):
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(new_contents)
         
-# winning-the-citadel-data-open-championship.html -> Winning-The-Citadel-Data-Open
+# winning-the-citadel-data-open-championship.html -> Winning-The-Citadel-Data-Open (and change the file name)
 # Forrest-Bicker.html -> ''
 # /blog.html -> '' except for in .htaccess
-# 
+# resources.html -> resources
 # Thanks to my teammates Milo Knell, Eric Zhang, Sahil Rane, and Alan Wu, along with our friend and mentor Tiger Che. Shout out to Laurie Luo, Larry Wang, and Luke Wang.
