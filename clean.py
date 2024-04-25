@@ -16,7 +16,8 @@ for file in os.listdir('./blog'):
         
 # winning-the-citadel-data-open-championship.html -> Winning-The-Citadel-Data-Open (and change the file name)
 # Forrest-Bicker.html -> ''
-# /blog.html -> '' except for in .htaccess
-# blog/blog.html file to blog/index.html
+# /blog.html -> ''
+# blog file to blog/index.html
 # resources.html -> resources
+# puerto-vallarta.html -> puerto-vallarta
 # Thanks to my teammates Milo Knell, Eric Zhang, Sahil Rane, and Alan Wu, along with our friend and mentor Tiger Che. Shout out to Laurie Luo, Larry Wang, and Luke Wang.
