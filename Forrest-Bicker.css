@@ -575,6 +575,11 @@
   margin: 0;
 }
 
+.u-section-3 .u-btn-1 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-section-3 .u-image-1 {
   min-height: 250px;
   background-image: url("images/prosperity1.png");
