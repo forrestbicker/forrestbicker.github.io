@@ -20,4 +20,3 @@ for file in os.listdir('./blog'):
 # blog file to blog/index.html
 # resources.html -> resources
 # puerto-vallarta.html -> puerto-vallarta
-# Thanks to my teammates Milo Knell, Eric Zhang, Sahil Rane, and Alan Wu, along with our friend and mentor Tiger Che. Shout out to Laurie Luo, Larry Wang, and Luke Wang.
