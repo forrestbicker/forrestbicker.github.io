@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: url("images/forest.png");
+  background-image: url("images/forest.webp");
   min-height: 899px;
 }
 
@@ -139,7 +139,7 @@
   transition-duration: 3.75s;
   --radius: 9px;
   transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 
 .u-section-2 .u-image-2 {
@@ -582,7 +582,7 @@
 
 .u-section-3 .u-image-1 {
   min-height: 250px;
-  background-image: url("images/prosperity1.png");
+  background-image: url("images/prosperity.webp");
   --radius: 5px;
   background-position: 50% 50%;
 }
@@ -671,7 +671,7 @@
 
 .u-section-4 .u-image-1 {
   min-height: 250px;
-  background-image: url("images/dataopenchampions.jpg");
+  background-image: url("images/dataopenchampions.webp");
   --radius: 5px;
   background-position: 50% 50%;
 }
@@ -796,8 +796,8 @@
 
 .u-section-5 .u-image-1 {
   min-height: 250px;
-  background-image: url("images/asf.jpg");
-  background-position: 50% 21.83%;
+  background-image: url("images/asf.webp");
+  background-position: 50% 50%;
   --radius: 10px;
 }
 
@@ -888,7 +888,7 @@
 
 .u-section-6 .u-image-1 {
   min-height: 250px;
-  background-image: url("images/terminal1.png");
+  background-image: url("images/terminal.webp");
   --radius: 10px;
   background-position: 50% 50%;
 }
@@ -1003,7 +1003,7 @@
 
 .u-section-7 .u-image-1 {
   min-height: 250px;
-  background-image: url("images/coarsegrain.png");
+  background-image: url("images/coarsegrain.webp");
   --radius: 10px;
   background-position: 50% 50%;
 }
@@ -1094,8 +1094,8 @@
 
 .u-section-8 .u-image-1 {
   min-height: 250px;
-  background-image: url("images/bg.png");
-  background-position: 50% 100%;
+  background-image: url("images/bg.webp");
+  background-position: 50% 50%;
   --radius: 10px;
 }
 
@@ -1217,7 +1217,7 @@
 
 .u-section-9 .u-image-1 {
   min-height: 250px;
-  background-image: url("images/mtf.jpg");
+  background-image: url("images/mtf.webp");
   background-position: 50% 50%;
   --radius: 10px;
 }
