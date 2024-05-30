@@ -3,3 +3,6 @@ User-agent: Googlebot-Image
 Disallow: /images/*
 Allow: /images/autum.webp
 Allow: /images/bullish.webp
+Allow: /images/dataopenchampions.webp
+Disallow: /assets/*
+Allow: /images/dataopencake.webp
