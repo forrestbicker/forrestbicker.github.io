@@ -1315,7 +1315,18 @@
  }
 
  .u-section-10 .u-sheet-1 {
-   min-height: 100px;
+   min-height: 120px;
+ }
+
+ .u-section-10 .u-btn-1 {
+   border-style: solid;
+   font-weight: 700;
+   text-transform: uppercase;
+   --radius: 10px;
+   font-size: 0.75rem;
+   line-height: 1;
+   margin: 32px auto 0;
+   padding: 10px 15px 10px 14px;
  }
 
  .u-font-open-sans.u-custom-font.double-shadow {
