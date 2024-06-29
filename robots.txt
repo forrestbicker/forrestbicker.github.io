@@ -7,3 +7,4 @@ Allow: /images/bullish.webp
 Allow: /images/dataopenchampions.webp
 Allow: /images/dataopencake.webp
 Allow: /assets/favicon.ico
+Allow: /assets/leaderboard.webp
