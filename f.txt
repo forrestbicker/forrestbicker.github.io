@@ -1,0 +1,59 @@
+import plotly.graph_objects as go
+from plotly import express as px, io as pio
+
+pio.templates['plotly']['layout']['colorway'] = px.colors.qualitative.G10
+animals = ['Static Buffer<br>Risk Factor', 'Static Buffer<br>Constraint Factor', '',
+           'Dynamic Buffer<br>Risk Factor ', 'Dynamic Buffer<br>Constraint Factor']
+
+# Data for each bar
+utilities = [43.60, 43.91, 43.19, 0, 43.88, 44.03]
+trade_cost = [39.6, 38.9, 39.0, 0, 38.7, 37.5]
+feasibility_pct = [6.92, 6.12, 4.60, 0, 5.74, 4.05]
+returns = [u + t for u, t in zip(utilities, trade_cost)]
+slippage = [-(100-p) * t / 100 for p, t in zip(feasibility_pct, trade_cost)]
+feasibility = [-p * t / 100 for p, t in zip(feasibility_pct, trade_cost)]
+
+print(returns)
+print(slippage)
+
+returns = [r - returns[0] if r != 0 else 0 for r in returns[1:]]
+trade_cost = [-r + trade_cost[0] if r != 0 else 0 for r in trade_cost[1:]]
+slippage = [r - slippage[0] if r != 0 else 0 for r in slippage[1:]]
+feasibility = [r - feasibility[0] if r != 0 else 0 for r in feasibility[1:]]
+# Summing the components to get the height of each bar
+total = [r + (slippage[i] if i < len(slippage) else 0) + (feasibility[i] if i < len(feasibility) else 0)
+         for i, r in enumerate(returns)]
+
+fig = go.Figure(data=[
+    go.Bar(name='Marginal Ideal Return', x=animals, y=returns),
+    go.Bar(name='Marginal Slippage', x=animals, y=trade_cost),
+])
+
+total = [t if t != 0 else None for t in total]
+# Adding the total sum as a horizontal line using annotations
+for i, t in enumerate(total):
+    if t is not None:
+        fig.add_shape(
+            type="line",
+            x0=i - 0.4, x1=i + 0.4,  # Span the width of the bar
+            y0=t, y1=t,
+            line=dict(color="black", width=2),
+        )
+
+# Add a dummy trace for the legend
+fig.add_trace(go.Scatter(
+    x=[None], y=[None],
+    mode='lines',
+    line=dict(color="black", width=2, dash='solid'),
+    showlegend=True,
+    name="Net Marginal Utility"
+))
+
+# Change the bar mode
+fig.update_layout(barmode='relative')
+fig.update_layout(
+    title="Utility Breakdown<br><sup>Average changes in utility from baseline formulation over 30 trials from 2017 to 2023</sup>",
+    yaxis_title="Annualized Ex-Ante Return",
+)
+fig.update_yaxes(ticksuffix='bp/yr')
+fig.show()
