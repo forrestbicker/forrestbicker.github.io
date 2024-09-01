@@ -8,3 +8,9 @@ Allow: /images/dataopenchampions.webp
 Allow: /images/dataopencake.webp
 Allow: /assets/favicon.ico
 Allow: /assets/leaderboard.webp
+Allow: /assets/tunnel.webp
+Allow: /assets/tunnel.webp
+Allow: /assets/bethesda.webp
+Allow: /assets/antelope.webp
+Allow: /assets/fountain.webp
+Allow: /assets/swamp.webp
