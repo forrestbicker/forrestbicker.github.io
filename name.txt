@@ -1,17 +1,14 @@
 # Forrest Franklin 평화 Bicker
 
 ## primality
-forrest = 101 prime
-forrest bicker = 149 prime
-forrest franklin pyung hwa bicker = 349 prime
-4357 prime
-
-f+o+r+r+e+s+t = 101, b+i+c+k+e+r = 48
-f+r+a+n+k+l+i+n=85, p+y+u+n+g+h+w+a = 115
-
+first name: forrest = 101 prime
+full name: forrest bicker = 149 prime
+legal name: forrest franklin pyunghwa bicker = 349 prime
+all name: forrest franklin (felix) pyunghwa bicker-sohn = 461 prime
+numberical name: 4357 prime
 
 ## nicknames
 bicky, bicket, biker, bic, borrest
-जंगली भिखारी (jangalee bhikhaaree): jungle/wild beggar
+जंगली भिखारी (jangalee bhikhaaree): wild beggar
 
 Trees Peace Argue
