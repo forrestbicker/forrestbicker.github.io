@@ -14,85 +14,6 @@
   <link rel="stylesheet" href="Pics.css" media="screen">
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-  <script> let RESOLUTION = 17000;
-    function f(theta, n) {
-      return Math.cos(Math.asin(1) * 3 / n) / Math.cos(Math.asin(Math.sin(n * theta / 4)) * 3 / n)
-    }
-    function buildLogo(n, ctx, WIDTH) {
-      let data = [];
-      var gradient = ctx.createRadialGradient(WIDTH / 2, WIDTH / 2, 10, WIDTH / 2, WIDTH / 2, WIDTH / 2);
-      gradient.addColorStop(0.5, '#542f27');
-      gradient.addColorStop(1, '#95A671');
-      // Fill with gradient
-      ctx.fillStyle = gradient;
-      ctx.strokeStyle = ctx.beginPath();
-      ctx.arc(WIDTH / 2, WIDTH / 2, WIDTH / 2, 0, 2 * Math.PI);
-      ctx.fill();
-      // create RESOLUTIONxRESOLUTION grid
-      for (var i = 0; i < WIDTH; i++) {
-        let row = [];
-        for (var j = 0; j < WIDTH; j++) {
-          row.push(0);
-        }
-        data.push(row);
-      }
-      ctx.strokeStyle = `rgba(0, 0, 0, 1)`;
-      ctx.fillStyle = `rgba(0, 0, 0, 0.15)`;
-      ctx.beginPath();
-      ctx.moveTo(WIDTH / 2, WIDTH / 2);
-      for (let i = 0; i <= RESOLUTION; i++) {
-        let theta = (i / RESOLUTION) * 16 * Math.PI - 8 * Math.PI;
-        let r = f(theta, n);
-        let [x, y] = polarToPara(r, theta, WIDTH);
-        ctx.lineTo(x, y);
-        if (i % 1700 == 0) {
-          ctx.closePath()
-          ctx.fill()
-          ctx.beginPath();
-          ctx.moveTo(WIDTH / 2, WIDTH / 2);
-          ctx.lineTo(x, y);
-        }
-      }
-    }
-    function polarToPara(r, theta, WIDTH) {
-      let x = (r * Math.cos(theta) * RESOLUTION / 2 + RESOLUTION / 2);
-      x = (x / (RESOLUTION / WIDTH));
-      let y = (r * Math.sin(theta) * RESOLUTION / 2 + RESOLUTION / 2);
-      y = (y / (RESOLUTION / WIDTH));
-      return [x, y];
-    }
-    function setupLogos() {
-      document.getElementsByClassName('u-backlink')[0].innerHTML = ''
-      document.getElementsByClassName('u-backlink')[0].style.display = 'none';
-      i = 0
-      nMax = 6;
-      nMin = 4.25;
-      let WIDTH = 128;
-      iconElem = document.getElementsByClassName('u-icon-1')[0];
-      iconParentElem = iconElem.parentElement;
-      iconParentElem.insertBefore(document.createElement('canvas'), iconElem);
-      iconParentElem.removeChild(iconElem);
-      // set width="128px" height="128px"
-      dynamicCanvas = iconParentElem.childNodes[0];
-      dynamicCanvas.setAttribute('width', '128px');
-      dynamicCanvas.setAttribute('height', '128px');
-      if (dynamicCanvas.getContext) {
-        var dynamicCtx = dynamicCanvas.getContext('2d');
-      }
-      setInterval(function () {
-        dynamicCtx.clearRect(0, 0, WIDTH, WIDTH);
-        if (nMin + i <= nMax) {
-          buildLogo(nMin + i, dynamicCtx, WIDTH);
-        } else {
-          buildLogo(2 * nMax - nMin - i, dynamicCtx, WIDTH);
-        }
-        i += 0.125 / 32;
-        if (2 * nMax - nMin - i <= nMin) {
-          i = 0;
-        }
-      }, 60);
-    }
-    document.addEventListener("DOMContentLoaded", setupLogos); </script>
 
   <link rel="canonical" href="https://forrestbicker.com">
   <link rel="icon" href="assets/favicon.ico">
@@ -131,16 +52,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet">
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementsByClassName('u-backlink')[0].innerHTML = '';
-      document.getElementsByClassName('u-backlink')[0].style.display = 'none';
-    });
-  </script>
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </head>
 
-<body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-overlap-transparent u-stick-footer u-xl-mode" data-lang="en">
+<body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-overlap u-stick-footer u-xl-mode" data-lang="en">
   <header class="u-clearfix u-custom-color-10 u-header u-sticky u-sticky-3292 u-header" id="sec-929d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="./" data-page-id="2011114386" class="u-image u-logo u-image-1" data-image-width="64" data-image-height="64" title="Forrest Bicker">
@@ -204,31 +119,31 @@
         <div class="u-gallery-inner u-gallery-inner-1">
           <div class="u-gallery-item">
             <div class="u-back-slide" data-image-width="1833" data-image-height="1218">
-              <img class="u-back-image u-expanded" src="images/Forrestmompicks-9275-Copy.jpg">
+              <img class="u-back-image u-expanded" src="assets/tunnel.webp">
             </div>
             <div class="u-over-slide u-shading u-over-slide-1"></div>
           </div>
           <div class="u-gallery-item">
             <div class="u-back-slide" data-image-width="2048" data-image-height="1365">
-              <img class="u-back-image u-expanded" src="images/Forrestpicks__-9113.jpg">
+              <img class="u-back-image u-expanded" src="assets/swamp.webp">
             </div>
             <div class="u-over-slide u-shading u-over-slide-2"></div>
           </div>
           <div class="u-gallery-item">
             <div class="u-back-slide" data-image-width="2048" data-image-height="1365">
-              <img class="u-back-image u-expanded" src="images/Forrestmompicks-8840.jpg">
+              <img class="u-back-image u-expanded" src="assets/fountain.webp">
             </div>
             <div class="u-over-slide u-shading u-over-slide-3"></div>
           </div>
           <div class="u-gallery-item">
             <div class="u-back-slide" data-image-width="2048" data-image-height="1258">
-              <img class="u-back-image u-expanded" src="images/Forrestmompicks-8712.jpg">
+              <img class="u-back-image u-expanded" src="assets/mudd.webp">
             </div>
             <div class="u-over-slide u-shading u-over-slide-4"></div>
           </div>
           <div class="u-gallery-item">
             <div class="u-back-slide" data-image-width="2500" data-image-height="1743">
-              <img class="u-back-image u-expanded" src="images/Antelope.jpg">
+              <img class="u-back-image u-expanded" src="assets/antelope.jpg">
             </div>
             <div class="u-over-slide u-shading u-over-slide-5"></div>
           </div>
@@ -279,7 +194,6 @@
       </div>
     </div>
   </footer>
-  <section class="u-backlink u-clearfix u-grey-80"></section>
 
 </body>
 
