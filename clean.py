@@ -13,8 +13,8 @@ for file in os.listdir('./blog'):
         
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(new_contents)
-        
-# winning-the-citadel-data-open-championship.html -> Winning-The-Citadel-Data-Open (and change the file name)
+
+# Winning-The-Citadel-Data-Open -> Winning-The-Citadel-Data-Open (and change the file name)
 # Forrest-Bicker.html -> ''
 # /blog.html -> ''
 # blog file to blog/index.html
