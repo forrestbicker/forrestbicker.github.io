@@ -1,86 +1,142 @@
-﻿; High-level: Double Ctrl opens a search GUI. Type to filter preset text, Enter to paste. Closes if focus is lost.
+; High-level:
+; - Double Shift: opens QuickShot to paste from preset text (email/phone)
+; - Ctrl+Shift+F: opens command palette (">"-prefixed commands)
+; - Both support filtering, Enter/double-click execution, and cycling navigation
+; === Data sources ===
+global QuickList := ["fbicker@arrowstreetcapital.com", "9179755325"]
+global CommandList := [">Paste", ">Open Notepad", ">Password"]
+
+RunSelectedCommand() {
+    global GUIOpen
+    GuiControlGet, ListBox,, ListBox
+    if (ListBox != "") {
+        CloseGUI()
+        Sleep 100
+        WinActivate, A
+
+        ; Dispatch command
+        if (ListBox = ">Paste") {
+            Send ^v
+        } else if (ListBox = ">Open Notepad") {
+            Run, notepad.exe
+        } else if (ListBox = ">Password") {
+            SendInput populate your password in settings{Raw}!
+        }
+    }
+}
 
 #NoEnv
 #SingleInstance Force
 SetBatchLines -1
 
-global ListBoxItems := [], CurrentIndex := 1
+global GUIOpen := false
+global ListBoxItems := []
+global CurrentIndex := 1
+global ListBox
+global MyHwnd
+global Mode := "" ; either "quick" or "cmd"
 
 
-List := ["fbicker@arrowstreetcapital.com", "9179755325"]
+; === Hotkeys ===
 
-global GUIOpen := false, LastCtrl := 0, ListBox
-
-~Ctrl::
-    if (A_PriorHotkey = "~Ctrl" and A_TimeSincePriorHotkey < 300)
-    {
-        if !GUIOpen
-            ShowSearchGUI()
+~Shift::
+if (A_PriorHotkey = "~Shift" and A_TimeSincePriorHotkey < 200) {
+    if !GUIOpen {
+        Mode := "quick"
+        ShowSearchGUI(QuickList, "QuickShot [fbicker] 🎈")
     }
-    LastCtrl := A_TickCount
+}
+KeyWait, Shift
 return
 
-ShowSearchGUI() {
-    global ListBoxItems, CurrentIndex
-    global GUIOpen, List, MyHwnd
+^+f:: ; Ctrl+Shift+F
+if !GUIOpen {
+    Mode := "cmd"
+    ShowSearchGUI(CommandList, "CMD Palette")
+}
+return
+
+; === GUI Logic ===
+
+ShowSearchGUI(sourceList, title) {
+    global GUIOpen, ListBoxItems, CurrentIndex, MyHwnd
 
     GUIOpen := true
-
     Gui, MyGui:New, +AlwaysOnTop +ToolWindow +HwndMyHwnd
     Gui, MyGui:Color, F5F5F5
     Gui, MyGui:Font, s10, Segoe UI
 
-    Gui, MyGui:Add, Edit, vSearchInput gMyGuiOnEdit w300
-    filtered := JoinFiltered(List, "")
+    ; Get active monitor
+    WinGetPos, winX, winY,,, A
+    SysGet, MonitorCount, MonitorCount
+    activeMon := 1
+    Loop % MonitorCount {
+        SysGet, mon, Monitor, %A_Index%
+        if (winX >= monLeft && winX < monRight && winY >= monTop && winY < monBottom) {
+            activeMon := A_Index
+            break
+        }
+    }
+    SysGet, mon, MonitorWorkArea, %activeMon%
+    guiW := 325
+    guiH := 280
+    guiX := monLeft + (monRight - monLeft - guiW) // 2
+    guiY := monTop + (monBottom - monTop - guiH) // 3
+
+    ; Add controls
+    initialText := (Mode = "cmd") ? ">" : ""
+    Gui, MyGui:Add, Edit, vSearchInput gMyGuiOnEdit w300, %initialText%
+    filtered := JoinFiltered(sourceList, initialText)
     ListBoxItems := StrSplit(filtered, "|")
     CurrentIndex := 1
-    Gui, MyGui:Add, ListBox, vListBox gMyGuiOnSelect w300 h200, %filtered%
-    Gui, MyGui:Show,, QuickShot [fbicker] 🎈
+    Gui, MyGui:Add, ListBox, vListBox gMyGuiOnSelect w300 h220, %filtered%
+    Gui, MyGui:Show, x%guiX% y%guiY% w%guiW% h%guiH%, %title%
     GuiControl, MyGui:Focus, SearchInput
+    if (Mode = "cmd")
+        SendInput {Right} ; move caret past ">"
+
     GuiControl, MyGui:Choose, ListBox, 1
-
-
-    GuiControlGet, hEdit, Hwnd, SearchInput
-    GuiControlGet, hListBox, Hwnd, ListBox
-
-
-    OnMessage(0x100, "HandleKeyPress") ; catch Enter
     SetTimer, CheckFocusLoss, 100
+    OnMessage(0x100, "HandleKeyPress")
 }
 
-CheckFocusLoss:
-    if (GUIOpen) {
-        WinGet, activeID, ID, A
-        if (activeID != MyHwnd) {
-            Gui, MyGui:Destroy
-            GUIOpen := false
-            SetTimer, CheckFocusLoss, Off
-        }
-    } else {
-        SetTimer, CheckFocusLoss, Off
-    }
-return
-
-MyGuiGuiEscape:
+CloseGUI() {
+    global GUIOpen
     Gui, MyGui:Destroy
     GUIOpen := false
     SetTimer, CheckFocusLoss, Off
+}
+
+CheckFocusLoss:
+if (GUIOpen) {
+    WinGet, activeID, ID, A
+    if (activeID != MyHwnd)
+        CloseGUI()
+}
+return
+
+MyGuiGuiEscape:
+CloseGUI()
 return
 
 MyGuiOnEdit:
-    global ListBoxItems, CurrentIndex
-    GuiControlGet, SearchInput,, SearchInput
-    filtered := JoinFiltered(List, SearchInput)
-    ListBoxItems := StrSplit(filtered, "|")
-    GuiControl, MyGui:, ListBox, |%filtered%
-    CurrentIndex := 1
-    GuiControl, MyGui:Choose, ListBox, 1
+global ListBoxItems, CurrentIndex
+GuiControlGet, SearchInput,, SearchInput
+src := (Mode = "cmd") ? CommandList : QuickList
+filtered := JoinFiltered(src, SearchInput)
+ListBoxItems := StrSplit(filtered, "|")
+GuiControl, MyGui:, ListBox, |%filtered%
+CurrentIndex := 1
+GuiControl, MyGui:Choose, ListBox, 1
 return
 
 MyGuiOnSelect:
-    if (A_GuiEvent = "DoubleClick") {
-        SendSelected()
-    }
+if (A_GuiEvent = "DoubleClick") {
+    if (Mode = "cmd")
+        RunSelectedCommand()
+    else
+        SendSelectedText()
+}
 return
 
 HandleKeyPress(wParam, lParam, msg, hwnd) {
@@ -89,42 +145,46 @@ HandleKeyPress(wParam, lParam, msg, hwnd) {
         return
 
     if (wParam = 13) { ; Enter
-        SendSelected()
+        if (Mode = "cmd")
+            RunSelectedCommand()
+        else
+            SendSelectedText()
         return 0
     }
 
-    if (wParam = 38 || wParam = 40) { ; Up or Down
+    if (wParam = 38 || wParam = 40) { ; Up/Down arrows
         dir := (wParam = 38) ? -1 : 1
         CurrentIndex += dir
-        if (CurrentIndex < 1)
-            CurrentIndex := 1
-        if (CurrentIndex > ListBoxItems.MaxIndex())
-            CurrentIndex := ListBoxItems.MaxIndex()
+        CurrentIndex := Mod(ListBoxItems.MaxIndex() + CurrentIndex - 1, ListBoxItems.MaxIndex()) + 1
         GuiControl, MyGui:Choose, ListBox, %CurrentIndex%
         return 0
     }
 }
 
-SendSelected() {
+JoinFiltered(arr, filter) {
+    out := ""
+    if (Mode = "cmd" && SubStr(filter, 1, 1) != ">")
+        return ""
+
+    clean := (Mode = "cmd") ? SubStr(filter, 2) : filter
+
+    Loop % arr.MaxIndex() {
+        val := arr[A_Index]
+        if (Mode = "cmd" && SubStr(val, 1, 1) != ">")
+            continue
+        if (clean = "" or InStr(val, clean))
+            out .= val . "|"
+    }
+    return RTrim(out, "|")
+}
+
+SendSelectedText() {
     global GUIOpen
     GuiControlGet, ListBox,, ListBox
     if (ListBox != "") {
-        Gui, MyGui:Destroy
-        GUIOpen := false
-        SetTimer, CheckFocusLoss, Off
+        CloseGUI()
         Sleep 100
         WinActivate, A
         SendInput %ListBox%
     }
-}
-
-JoinFiltered(arr, filter) {
-    out := ""
-    Loop % arr.MaxIndex()
-    {
-        val := arr[A_Index]
-        if (filter = "" or InStr(val, filter))
-            out .= val . "|"
-    }
-    return RTrim(out, "|")
 }
