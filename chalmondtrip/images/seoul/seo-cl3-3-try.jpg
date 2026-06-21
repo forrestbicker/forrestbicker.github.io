@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>뮤즈클리닉 강남점 | 강남역/신논현역 피부과 | 일요일진료</title>
+    
+    <!-- 통합된 검색엔진 제어 메타 태그 -->
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="NaverBot" content="index,follow" />
+    <meta name="Yeti" content="index,follow" />
+    
+    
+    <!-- 네이버 사이트 인증 -->
+    <meta name="naver-site-verification" content="21f39df9cf53b9041c4d8fb3349f14709f5d9db3" />
+
+    <!-- Google Search Console 인증 -->
+    <meta name="google-site-verification" content="E3BC01166448BAEDAE6872E598A79C7B" />
+
+    
+<!-- 일반 검색어 노출을 위한 SEO 메타 태그 -->
+<meta name="description" content="강남 대표 피부과, 신논현역 6번출구, 울쎄라, 써마지, 덴서티, 슈링크, 인모드, 보톡스, 윤곽주사, 레이저토닝, 기미잡티, 여드름흉터, 모공, 리프팅, 스킨부스터, 일요일진료" />
+<meta name="keywords" content="뮤즈클리닉 강남점, 강남피부과, 강남역피부과, 신논현역 피부과, 울쎄라, 써마지, 덴서티, 슈링크, 인모드, 보톡스, 윤곽주사, 레이저토닝, 기미잡티, 여드름흉터, 모공, 리프팅, 스킨부스터, 일요일진료" />
+
+<!-- Canonical & 다국어 -->
+
+<link rel="canonical" href="https://gangnam.museclinic.co.kr/ko/" />
+
+<link rel="alternate" hreflang="ko" href="https://gangnam.museclinic.co.kr/ko" />
+<link rel="alternate" hreflang="en" href="https://gangnam.museclinic.co.kr/en" />
+<link rel="alternate" hreflang="ja" href="https://gangnam.museclinic.co.kr/ja" />
+<link rel="alternate" hreflang="zh-Hans" href="https://gangnam.museclinic.co.kr/zh" />
+<link rel="alternate" hreflang="zh-Hant" href="https://gangnam.museclinic.co.kr/zh-tw" />
+<link rel="alternate" hreflang="th" href="https://gangnam.museclinic.co.kr/th" />
+<link rel="alternate" hreflang="x-default" href="https://gangnam.museclinic.co.kr/ko" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="뮤즈클리닉 강남점 | 강남역/신논현역 피부과 | 일요일진료">
+<meta property="og:description" content="강남 대표 피부과, 신논현역 6번출구, 울쎄라, 써마지, 덴서티, 슈링크, 인모드, 보톡스, 윤곽주사, 레이저토닝, 기미잡티, 여드름흉터, 모공, 리프팅, 스킨부스터, 일요일진료">
+<meta property="og:image" content="https://gangnam.museclinic.co.kr/static/images/meta/ko/home.png">
+<meta property="og:url" content="https://gangnam.museclinic.co.kr/ko">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="뮤즈클리닉 강남점 | 강남역/신논현역 피부과 | 일요일진료">
+<meta name="twitter:description" content="강남 대표 피부과, 신논현역 6번출구, 울쎄라, 써마지, 덴서티, 슈링크, 인모드, 보톡스, 윤곽주사, 레이저토닝, 기미잡티, 여드름흉터, 모공, 리프팅, 스킨부스터, 일요일진료">
+<meta name="twitter:image" content="https://gangnam.museclinic.co.kr/static/images/meta/ko/home.png">
+
+    
+    
+<!-- 지역 정보 -->
+<meta name="geo.region" content="KR-11" />
+<meta name="geo.placename" content="강남구, 서울" />
+<meta name="geo.position" content="37.5028175;127.0257065" />
+
+<!-- 기본 메타 -->
+<meta name="robots" content="index, follow" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+
+
+    <!-- 카카오톡 채널 연동 -->
+    <meta property="kakao:channel" content="_xmumWl" />
+    <meta property="kakao:channel:type" content="talk" />
+
+    <!-- 보안 헤더를 최상단으로 이동 -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+            default-src 'self';
+            script-src 'self' 'unsafe-inline' 'unsafe-eval' https:;
+            style-src 'self' 'unsafe-inline' https:;
+            img-src 'self' data: https:;
+            font-src 'self' https:;
+            frame-src https:;
+            connect-src 'self' https:;
+            upgrade-insecure-requests;
+        "
+    />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="
+            geolocation=(self 'https://www.google.com'),
+            camera=(),
+            microphone=(),
+            payment=(),
+            usb=()
+        "
+    />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+    <!-- DNS 프리페칭 추가 -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- 중요 리소스 미리 로드 -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" as="style" />
+
+    <!-- 파비콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/icons/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icons/favicon.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon.png" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+        /* CLS 방지: 폰트 로딩 최적화 */
+        * {
+            font-display: swap;
+        }
+    </style>
+
+    <!-- SVG 아이콘 로드 -->
+    <link rel="preload" href="/images/icons/sprite.svg" as="image" type="image/svg+xml">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/components/icons.css" />
+    <link rel="stylesheet" href="/css/pages/base.css" />
+    
+<link rel="stylesheet" href="/css/pages/home.css">
+<link rel="stylesheet" href="/css/components/popup.css">
+
+
+    <!-- JavaScript 파일들 -->
+    <!-- Font Awesome JS 제거 -->
+    <script src="/js/components/dropdown.js" defer></script>
+    <script src="/js/pages/base.js" defer></script>
+    <!-- 장바구니 관련 스크립트 -->
+    <script src="/js/components/cart-handler.js?v=1" defer></script>
+    <script src="/js/components/cart-core.js" defer></script>
+
+    
+<!-- JavaScript -->
+<script src="/js/pages/home.js" defer></script>
+<!-- 팝업 JS 추가 -->
+<script src="/js/components/popup.js"></script>
+
+
+    <!-- Google Analytics (GA4) -->
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-JYY99DFBBW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-JYY99DFBBW');
+    </script>
+
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["MedicalBusiness", "LocalBusiness"],
+  "name": "뮤즈클리닉 강남점",
+  "alternateName": ["강남 피부과", "강남 미용의원", "강남 미용클리닉", "신논현역 피부과"],
+  "url": "https://gangnam.museclinic.co.kr/ko",
+  "description": "강남 대표 피부과, 신논현역 6번출구, 울쎄라, 써마지, 덴서티, 슈링크, 인모드, 보톡스, 윤곽주사, 레이저토닝, 기미잡티, 여드름흉터, 모공, 리프팅, 스킨부스터, 일요일진료",
+  "telephone": "+82-2-1544-2994",
+  "priceRange": "₩₩",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "강남대로 452",
+    "addressLocality": "강남구",
+    "addressRegion": "서울특별시",
+    "postalCode": "06123",
+    "addressCountry": "KR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.5028175,
+    "longitude": 127.0257065
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "11:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "10:30",
+      "closes": "19:00"
+    }
+  ],
+  "availableLanguage": ["한국어", "영어", "일본어", "중국어"],
+  "medicalSpecialty": ["피부과", "미용의학"],
+  "hasMap": "https://www.google.com/maps/place/뮤즈클리닉/@37.5028175,127.0257065,15z",
+  "sameAs": [
+    "https://www.instagram.com/museclinic_gn/",
+    "https://blog.naver.com/marrysugar"
+  ]
+}
+</script>
+
+  </head>
+  <body>
+    <!-- 소셜 미디어 고정 버튼 -->
+    <div class="floating-social" role="complementary" aria-label="소셜 미디어 링크">
+      <a
+        href="https://pf.kakao.com/_xmumWl"
+        class="social-icon kakao"
+        target="_blank"
+        rel="noopener"
+        aria-label="카카오톡 상담하기"
+      >
+        <svg class="icon" aria-hidden="true"><use href="/static/images/icons/sprite.svg#icon-comment"></use></svg>
+      </a>
+      <a
+        href="https://www.instagram.com/museclinic_gn/#"
+        class="social-icon instagram"
+        target="_blank"
+        rel="noopener"
+        aria-label="인스타그램 방문하기"
+      >
+        <svg class="icon" aria-hidden="true"><use href="/static/images/icons/sprite.svg#icon-instagram"></use></svg>
+      </a>
+      <a
+        href="https://www.youtube.com/museclinic"
+        class="social-icon youtube"
+        target="_blank"
+        rel="noopener"
+        aria-label="유튜브 채널 방문하기"
+      >
+        <svg class="icon" aria-hidden="true"><use href="/static/images/icons/sprite.svg#icon-youtube"></use></svg>
+      </a>
+    </div>
+
+    <!-- 헤더 영역 -->
+    <header class="main-header" role="banner">
+      <!-- 모바일 헤더 -->
+      <div class="mobile-header">
+        <!-- 상단 줄: 로고, 아이콘, 언어 -->
+        <div class="mobile-top">
+          <div class="logo">
+            <a href="/ko">
+              <picture>
+                <source srcset="/images/icons/logo.webp" type="image/webp">
+                <source srcset="/images/icons/logo.png" type="image/png">
+                <img
+                  src="/images/icons/logo.png"
+                  alt="뮤즈클리닉 강남점"
+                  width="120"
+                  height="40"
+                  loading="eager"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+          </div>
+          <div class="right-menu">
+            <div class="icon-links">
+              <a href="/ko/pages/search" aria-label="검색"><svg class="icon"><use href="/static/images/icons/sprite.svg#icon-search"></use></svg></a>
+              <a href="/ko/pages/cart" class="nav-link">
+                <svg class="icon"><use href="/static/images/icons/sprite.svg#icon-shopping-cart"></use></svg>
+                <span class="cart-count">0</span>
+              </a>
+              <a href="/ko/pages/check"><svg class="icon"><use href="/static/images/icons/sprite.svg#icon-user"></use></svg></a>
+              <div class="lang-btn-container">
+                <button type="button" class="lang-btn">
+                  <svg class="icon"><use href="/static/images/icons/sprite.svg#icon-globe"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 하단 줄: 메인메뉴만 -->
+        <div class="mobile-bottom">
+          <ul class="nav-links">
+            <li>
+              <a href="/ko/pages/events">
+                이벤트
+              </a>
+            </li>
+            <li>
+              <a href="/ko/pages/category">
+                시술 가격
+              </a>
+            </li>
+            <li><a href="/ko/pages/reservation">예약하기</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PC 메뉴는 그대로 유지 -->
+      <nav class="main-nav" role="navigation" aria-label="메인 메뉴">
+        <!-- 로고 -->
+        <div class="logo">
+          <a href="/ko" aria-label="뮤즈클리닉 홈페이지">
+            <picture>
+              <source srcset="/images/icons/logo.webp" type="image/webp">
+              <source srcset="/images/icons/logo.png" type="image/png">
+              <img
+                src="/images/icons/logo.png"
+                alt="뮤즈클리닉 강남점"
+                width="150"
+                height="50"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
+          </a>
+        </div>
+
+        <!-- PC 메뉴 -->
+        <div class="pc-menu">
+          <!-- 중앙 메뉴 -->
+          <ul class="nav-links">
+            <li>
+              <a href="/ko/pages/events">
+                이벤트
+              </a>
+            </li>
+            <li>
+              <a href="/ko/pages/category">
+                시술 가격
+              </a>
+            </li>
+            <li><a href="/ko/pages/reservation" class="reservation-btn">예약하기</a></li>
+          </ul>
+
+          <!-- 오른쪽 메뉴 -->
+          <div class="right-menu">
+            <div class="language-selector">
+              <form id="langForm" action="/change-language" method="POST">
+                <div class="dropdown">
+                  <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                    <div class="left-items">
+                      <img src="/images/flags/kr.svg" alt="한국어 선택" class="flag-icon" />
+                      <span class="lang-text">한국어</span>
+                    </div>
+                    <span class="arrow">▾</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li role="menuitem">
+                      <a href="#" onclick="changeLanguage('en', '/images/flags/us.svg', 'English')">
+                        <img src="/images/flags/us.svg" alt="English 선택" class="flag-icon" />
+                        <span>English</span>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="#" onclick="changeLanguage('zh', '/images/flags/zh.jpg', '中文')">
+                        <img src="/images/flags/zh.jpg" alt="中文 선택" class="flag-icon" />
+                        <span>中文</span>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="#" onclick="changeLanguage('zh-tw', '/images/flags/tw.svg', '繁體中文')">
+                        <img src="/images/flags/tw.svg" alt="繁體中文 선택" class="flag-icon" />
+                        <span>繁體中文</span>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="#" onclick="changeLanguage('ja', '/images/flags/jp.svg', '日本語')">
+                        <img src="/images/flags/jp.svg" alt="日本語 선택" class="flag-icon" />
+                        <span>日本語</span>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="#" onclick="changeLanguage('th', '/images/flags/th.svg', 'ไทย')">
+                        <img src="/images/flags/th.svg" alt="ไทย 선택" class="flag-icon" />
+                        <span>ไทย</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+            <div class="icon-links">
+              <a href="/ko/pages/search" aria-label="검색"><svg class="icon"><use href="/static/images/icons/sprite.svg#icon-search"></use></svg></a>
+              <a href="/ko/pages/cart" class="nav-link">
+                <svg class="icon"><use href="/static/images/icons/sprite.svg#icon-shopping-cart"></use></svg>
+                <span class="cart-count">0</span>
+              </a>
+              <a href="/ko/pages/check" aria-label="로그인"><svg class="icon"><use href="/static/images/icons/sprite.svg#icon-user"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 모바일 메뉴 -->
+        <div class="mobile-menu">
+          <button class="hamburger-btn" aria-expanded="false" aria-controls="mobile-nav-menu" aria-label="메뉴 열기">
+            <svg class="icon" aria-hidden="true"><use href="/static/images/icons/sprite.svg#icon-bars"></use></svg>
+          </button>
+          <nav id="mobile-nav-menu" class="mobile-nav-menu" aria-hidden="true">
+            <!-- 모바일 메뉴 내용 -->
+          </nav>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main id="main-content" class="content-wrapper" role="main" tabindex="-1">
+<main class="home-main" role="main">
+    <!-- 히어로 섹션 -->
+    <section class="hero-section" aria-label="뮤즈클리닉강남 소개">
+        <div class="hero-background">
+            <img src="/images/pages/main.webp"
+                 alt="강남 뮤즈클리닉 피부과 - 보톡스, 필러, 울쎄라 전문 미용의원 메인 이미지"
+                 loading="eager"
+                 width="1920"
+                 height="1080">
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <h1 class="hero-title">
+                    <span class="hero-subtitle">고객 만족, 그 이상의<br>감동을 설계합니다</span>
+                    뮤즈클리닉 강남
+                </h1>
+                
+                <p class="hero-description">
+                    14년의 노하우로 완성하는 신뢰할 수 있는 Premium Care
+                </p>
+
+                <div class="hero-stats">
+                    <p class="stats-info">
+                        <span class="since-group">
+                            <span class="since">since 2013</span>
+                            <span class="divider">|</span>
+                        </span>
+                        <span class="stats-group">
+                            <span class="stats-label">누적 고객수</span>
+                            <strong class="number-highlight">2,613,617</strong>
+                            <span>명</span>
+                        </span>
+                    </p>
+                </div>
+                
+                <div class="hero-cta">
+                    <div class="cta-buttons">
+                        <a href="/ko/pages/reservation" class="cta-button">
+                            <div class="cta-icon">
+                                <svg class="icon icon-2x"><use href="/static/images/icons/sprite.svg#icon-calendar-check"></use></svg>
+                            </div>
+                            <div class="cta-text">
+                                <span class="cta-title">간편 예약</span>
+                                <span class="cta-desc">날짜와 시간만 선택하세요</span>
+                            </div>
+                        </a>
+                        <a href="/ko/pages/events" class="cta-button">
+                            <div class="cta-icon">
+                                <svg class="icon icon-2x"><use href="/static/images/icons/sprite.svg#icon-gift"></use></svg>
+                            </div>
+                            <div class="cta-text">
+                                <span class="cta-title">이벤트</span>
+                                <span class="cta-desc"></span>
+                            </div>
+                        </a>
+                        <a href="/ko/pages/category" class="cta-button">
+                            <div class="cta-icon">
+                                <svg class="icon icon-2x"><use href="/static/images/icons/sprite.svg#icon-clock"></use></svg>
+                            </div>
+                            <div class="cta-text">
+                                <span class="cta-title">시술 가격</span>
+                                <span class="cta-desc"></span>
+                            </div>
+                        </a>
+                        <a href="/ko/pages/check" class="cta-button">
+                            <div class="cta-icon">
+                                <svg class="icon icon-2x"><use href="/static/images/icons/sprite.svg#icon-search"></use></svg>
+                            </div>
+                            <div class="cta-text">
+                                <span class="cta-title">예약 조회/변경</span>
+                                <span class="cta-desc"></span>
+                            </div>
+                        </a>
+                        <a href="https://immuse.co.kr/" class="cta-button" target="_blank">
+                            <div class="cta-icon">
+                                <svg class="icon icon-2x"><use href="/static/images/icons/sprite.svg#icon-store"></use></svg>
+                            </div>
+                            <div class="cta-text">
+                                <span class="cta-title">아임뮤즈</span>
+                                <span class="cta-desc">뮤즈클리닉 프리미엄 화장품</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content-wrapper">
+    <!-- 위치 섹션 -->
+    <section class="location-section" aria-labelledby="location-title">
+        <div class="hours-info">
+            <h3>위치안내</h3>
+            <dl>
+                <div class="hours-row">
+                    <dt>본관</dt>
+                    <dd><span>서울시 강남구 강남대로 452, 대연빌딩 2층</span></dd>
+                </div>
+            </dl>
+        </div>
+
+        <!-- 운영시간 정보 -->
+        <div class="hours-info">
+            <h3>운영시간</h3>
+            <dl>
+                <div class="hours-row">
+                    <dt>평일(월~금)</dt>
+                    <dd>오전 11:00 ~ 오후 9:00 <span style="color: #ff6600; font-size: 0.9em;">(접수마감 오후 8:00)</span></dd>
+                </div>
+                <div class="hours-row">
+                    <dt>토요일, 일요일</dt>
+                    <dd>오전 10:30 ~ 오후 7:00 <span style="color: #ff6600; font-size: 0.9em;">(접수마감 오후 5:00(시술), 오후 6:00(피부관리))</span></dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+    </div>
+</main>
+</main>
+
+    <!-- 푸터 영역 -->
+    <footer id="footer-content" class="main-footer" role="contentinfo" tabindex="-1">
+      <div class="footer-content">
+        <div class="footer-section">
+          <picture>
+            <source srcset="/images/icons/logo.webp" type="image/webp">
+            <source srcset="/images/icons/logo.png" type="image/png">
+            <img
+              src="/images/icons/logo.png"
+              alt="뮤즈클리닉 강남점"
+              class="footer-logo"
+              width="150"
+              height="50"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="address">
+            <p>본관 : 서울시 강남구 강남대로 452, 대연빌딩 2~5층</p>
+          </div>
+          <div class="business-info">
+            <p>대표: 하은환</p>
+            <p>사업자등록번호: 220-09-71102</p>
+            <p>개인정보관리책임자: 하은환</p>
+          </div>
+          <div class="footer-links">
+            <a href="/ko/pages/policy#privacy">개인정보처리방침</a>
+            <a href="/ko/pages/policy#terms">이용약관</a>
+            <span class="copyright">Copyright © 2013 MUSE CLINIC. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
